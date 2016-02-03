@@ -1,35 +1,36 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <title>Rated</title>
+  <title>Rated</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-      
-      <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+  <!-- Bootstrap core CSS -->
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 
-    <!-- Custom styles for this template -->
-    <link href="/css/cover.css" rel="stylesheet">
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+
+  <!-- Custom styles for this template -->
+  <link href="/css/cover.css" rel="stylesheet">
 
   
-  </head>
+</head>
 
-  <body>
+<body>
 
-    <div class="site-wrapper">
+  <div class="site-wrapper">
 
-      <div class="site-wrapper-inner">
+    <div class="site-wrapper-inner">
 
-        <div class="cover-container">
+      <div class="cover-container">
 
      <!--     <div class="masthead clearfix">
             <div class="inner">
@@ -45,34 +46,41 @@
           </div> -->
 
           <div class="inner cover">
-            <h1 class="hometext">RATED</h1>
-            <p class="lead hometext">Feedback Revolutionized.</p>
-            <p class="lead">
-              <a type="button" class="btn btn-primary btn-lg btn-block hometext" href="login">Login</a>
-            </p>
-            <p class="lead">or <a href="">Sign Up</a></p>
-            <p class="lead">
-              <button type="button" class="btn btn-primary hometext">FAQ</button>
-            </p>
+            <div class="row" id="user_tools">
+              <div class="col-xs-2 logout">
+                <button type="button" class="btn btn-default" aria-label="Logout">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Logout
+                </button>
+              </div>
+              <div class="col-xs-1 col-xs-offset-6 settings">
+                <a title="Settings" href="">
+                  <span class="glyphicon glyphicon-cog" style="font-size: 30px" aria-hidden="true"></span>
+                </a>
+              </div>
+              <div class="col-xs-1">
+                <a title="Help" href="">
+                  <span class="glyphicon glyphicon-question-sign" style="font-size: 30px" aria-hidden="true"></span>
+                </a>
+              </div>
+            </div>
+            <ul class="nav nav-tabs">
+              <li role="presentation" class="active"><a href="#">Home</a></li>
+              <li role="presentation"><a href="#">My Projects</a></li>
+              <li role="presentation"><a href="#">Rate</a></li>
+            </ul> 
           </div>
-
-
-
         </div>
-
       </div>
-
     </div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>-->
     <script src="js/bootstrap.min.js"></script>
-
-    <script src="/js/home.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <!--<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug 
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
   </body>
-</html>
+  </html>

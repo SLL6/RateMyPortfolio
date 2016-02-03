@@ -1,5 +1,5 @@
 .hometext{
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -7,10 +7,10 @@
  * Globals
  */
 
-/* Links */
-a,
-a:focus,
-a:hover {
+ /* Links */
+ a,
+ a:focus,
+ a:hover {
   color: #fff;
 }
 
@@ -29,8 +29,8 @@ a:hover {
  * Base structure
  */
 
-html,
-body {
+ html,
+ body {
   height: 100%;
   background-color: #333;
 }
@@ -47,7 +47,7 @@ body {
   height: 100%; /* For at least Firefox */
   min-height: 100%;
   -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+  box-shadow: inset 0 0 100px rgba(0,0,0,.5);
 }
 .site-wrapper-inner {
   display: table-cell;
@@ -67,7 +67,7 @@ body {
 /*
  * Header
  */
-.masthead-brand {
+ .masthead-brand {
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -114,7 +114,7 @@ body {
  * Cover
  */
 
-.cover {
+ .cover {
   padding: 0 20px;
 }
 .cover .btn-lg {
@@ -127,7 +127,7 @@ body {
  * Footer
  */
 
-.mastfoot {
+ .mastfoot {
   color: #999; /* IE8 proofing */
   color: rgba(255,255,255,.5);
 }
@@ -137,7 +137,7 @@ body {
  * Affix and center
  */
 
-@media (min-width: 768px) {
+ @media (min-width: 768px) {
   /* Pull out the header and footer */
   .masthead {
     position: fixed;
@@ -168,9 +168,18 @@ body {
 }
 
 /* 
- * Stacked Login
+ * Settings and Help Icon
  */
-.login {
-  padding: 0px;
-  width: 75%;
+ #user_tools {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+#settings {
+  position: absolute;
+  right: 10px;
+}
+
+#help {
+  position: absolute;
 }
