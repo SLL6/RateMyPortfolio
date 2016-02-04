@@ -8,7 +8,11 @@ $(document).ready(function() {
 /*
  * Function that is called when the document is ready.
  */
-function initializePage() {
+ function initializePage() {
+  $('#myTabs a').click(function (e) {
+    e.preventDefault()
+    $(this).tab('show')
+  })
   /*$("#login").click(function(e) {
     $.get("/login").
       success(function(data) {
@@ -17,7 +21,7 @@ function initializePage() {
       error(function(data) {
         console.log("ugh");
       });
-  })*/
+})*/
 
    /*function projectClick(e) {
     // Cancel the default action, which prevents the page from reloading
