@@ -14,6 +14,13 @@ $(document).ready(function() {
     $(this).tab('show')
   })
 
+  $('.carousel').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    swipeToSlide: true
+  });
+
    /*function projectClick(e) {
     // Cancel the default action, which prevents the page from reloading
     e.preventDefault();
