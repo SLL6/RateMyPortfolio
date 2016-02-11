@@ -1,0 +1,35 @@
+{
+	"query": "",
+	"results": [
+	  {
+		  "title": "Pick me!",
+		  "imageURL": "http://dummyimage.com/70x70/000/fff",
+		  "description": "The one you are looking for",
+		  "link": "#"
+	  },
+	  {
+		  "title": "Pick me!",
+		  "imageURL": "http://dummyimage.com/70x70/000/fff",
+		  "description": "The one you are looking for",
+		  "link": "#"
+	  },
+	  {
+		  "title": "Pick me!",
+		  "imageURL": "http://dummyimage.com/70x70/000/fff",
+		  "description": "The one you are looking for",
+		  "link": "#"
+	  },
+	  {
+		  "title": "Pick me!",
+		  "imageURL": "http://dummyimage.com/70x70/000/fff",
+		  "description": "The one you are looking for",
+		  "link": "#"
+	  },
+	  {
+		  "title": "Pick me!",
+		  "imageURL": "http://dummyimage.com/70x70/000/fff",
+		  "description": "The one you are looking for",
+		  "link": "#"
+	  }
+	]
+}

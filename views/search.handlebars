@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Rated</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/home.css" rel="stylesheet">
+
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Search Results</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="transition: left .2s">
+        <ul class="nav navbar-nav">
+          <li>
+            <!--search button -->
+            <div class="col-lg-10 sizingsearchbar">
+              <form id="searchform" role="form" method="get" action="/search">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="query" placeholder="Search for..." name="query">
+                  <span class="input-group-btn">
+                    <input type="submit" id="submitBtn" class="btn btn-default" value="Search"></input>
+                  </span>
+                </div><!-- /input-group -->
+              </form>
+            </div>
+          </li>
+          <li><a href="home">Home</a></li>
+          <li><a href="#">Categories</a></li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="settings">Settings</a></li>
+          <li><a href="/">Logout</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <div class="site-wrap">
+    <div class="row">
+      {{#each results}}
+      <a href={{link}}>
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <table>
+              <tr>
+                <td><img src={{imageURL}} style="padding-right: 15px"/></td>
+                <td colspan="2">
+                  <h4>{{title}}</h4>
+                  {{description}}
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </a>
+      {{/each}}
+    </div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+
+
+</body>
+</html>

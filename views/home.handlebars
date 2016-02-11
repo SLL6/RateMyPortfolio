@@ -13,34 +13,41 @@
   <link href="css/home.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-  <script src="jquery-1.12.0.min.js"></script>
-
 
 </head>
 <body>
-  <!-- start of list -->
-  <ul class="navigation">
-    <li class="nav-item">
-      <!--search button -->
-      <div class="col-lg-10 sizingsearchbar">
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="Search for...">
-          <span class="input-group-btn">
-            <button class="btn btn-default" type="button">Search</button>
-          </span>
-        </div><!-- /input-group -->
+  <nav class="nav navbar-default">
+
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <!-- start of list -->
+        <ul class="navigation">
+          <li class="nav-item">
+            <!--search button -->
+            <div class="col-lg-10 sizingsearchbar">
+              <form id="searchform" role="form" method="get" action="/search">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="query" placeholder="Search for..." name="query">
+                  <span class="input-group-btn">
+                    <input type="submit" id="submitBtn" class="btn btn-default" value="Search"></input>
+                  </span>
+                </div><!-- /input-group -->
+              </form>
+            </div>
+          </li>
+          <li class="nav-item"><a href="home">Home</a></li>
+          <li class="nav-item"><a href="#">Categories</a></li>
+          <li class="nav-item"><a href="#">Profile</a></li>
+          <li class="nav-item"><a href="settings">Settings</a></li>
+          <li class="nav-item"><a href="/">Logout</a></li>
+        </ul>
       </div>
-    </li>
-    <li class="nav-item"><a href="#">Home</a></li>
-    <li class="nav-item"><a href="#">Categories</a></li>
-    <li class="nav-item"><a href="#">Profile</a></li>
-    <li class="nav-item"><a href="#">Settings</a></li>
-    <li class="nav-item"><a href="#">Logout</a></li>
-  </ul>
+    </div>
+  </nav>
 
   <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-  <label for="nav-trigger"></label>    
-
+  <label for="nav-trigger"></label>
+  
   <div class="site-wrap">
 
    <div class=fixedbody>
@@ -72,8 +79,8 @@
 
       <!-- First image of second row  --> 
       <div class="row">
-      <div class="carousel" id="carousel2">
-          {{#each trending}}
+        <div class="carousel" id="carousel2">
+          {{#each fresh}}
           <div class="">
             <a href={{link}}>
               <img src={{imageUrl}} alt="...">
@@ -82,38 +89,10 @@
           {{/each}}
         </div>
       </div>
-      </div>
-
     </div>
 
-    <!-- Next two rows for CATEGORIES  -->       
-    <div class="">
-      <div class="row">
-        <h4>Trending</h4> 
-      </div>
-
-      <!-- First image  --> 
-      <div class="row">
-        <div class="carousel" id="carousel3">
-          <div class="">
-            <a href="#">
-              <img src="..." alt="...">
-            </a>
-          </div>
-          <div class="">
-            <a href="#">
-              <img src="..." alt="...">
-            </a>
-          </div>
-          <div class="">
-            <a href="#">
-              <img src="..." alt="...">
-            </a>  
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
+</div>
 
 
 </div>
