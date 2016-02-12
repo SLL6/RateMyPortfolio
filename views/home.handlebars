@@ -11,11 +11,11 @@
  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 
   <!-- Bootstrap -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/bootstrap.css" rel="stylesheet">
-  <link href="css/home.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/bootstrap.css" rel="stylesheet">
+  <link href="/css/home.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css"/>
 
 </head>
 <body style="font-family: Roboto ; background-color: gray">
@@ -65,7 +65,7 @@
         <div class="carousel" id="carousel1">
           {{#each trending}}
           <div class="">
-            <a href={{link}}>
+            <a href="/rate/{{id}}">
               <img class="thumbnail" src={{imageUrl}} alt="...">
             </a>
           </div>
@@ -85,7 +85,7 @@
         <div class="carousel" id="carousel2">
           {{#each fresh}}
           <div class="">
-            <a href={{link}}>
+            <a href="/rate/{{id}}">
               <img class="thumbnail" src={{imageUrl}} alt="...">
             </a>
           </div>
@@ -116,9 +116,9 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="slick/slick.min.js"></script>
-<script src="js/home.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/slick/slick.min.js"></script>
+<script src="/js/home.js"></script>
 
 
 </body>

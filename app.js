@@ -48,7 +48,7 @@ app.get('/signUp', signUp.view);
 app.get('/home', home.view);
 app.get('/settings', settings.view);
 app.get('/search', search.displayResults);
-app.get('/rate', rate.displayResults);
+app.get('/rate/:id', rate.displayProject);
 
 // Example route
 // app.get('/users', user.list);
