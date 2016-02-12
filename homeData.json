@@ -8,49 +8,50 @@
 	  {
 	    "title": "item 2",
 	    "imageUrl": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/charlie-gentle.jpg",
-	    "link": "#"
+	    "link": "/rate"
 	  },
 	  {
 	    "title": "item 3",
 	    "imageUrl": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/kevin-lucius.jpg",
-	    "link": "#"
+	    "link": "/rate"
 	  },
 	  {
 	    "title": "item 4",
 	    "imageUrl": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/janis-godins.jpg",
-	    "link": "#"
+	    "link": "/rate"
 	  },
 	  {
 	    "title": "item 5",
 	    "imageUrl": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/scratch-22.jpg",
-	    "link": "#"
+	    "link": "/rate"
 	  }
 	],
 	"fresh": [
 	  {
 	    "title": "item 1",
 	    "imageUrl": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/teo-skaffa.jpg",
-	    "link": "#"
+	    "link": "/rate"
 	  },
 	  {
 	    "title": "item 2",
 	    "imageUrl": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/edelwwweiss.jpg",
-	    "link": "#"
+	    "link": "/rate"
 	  },
 	  {
 	    "title": "item 3",
 	    "imageUrl": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/serial-cut.jpg",
-	    "link": "#"
+	    "link": "/rate"
+	 
 	  },
 	  {
 	    "title": "item 4",
 	    "imageUrl": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/soft-whiteroom.jpg",
-	    "link": "#"
+	    "link": "/rate"
 	  },
 	  {
 	    "title": "item 5",
 	    "imageUrl": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/web-talents.jpg",
-	    "link": "#"
+	    "link": "/rate"
 	  }
 	]
 }
