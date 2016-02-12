@@ -13,7 +13,7 @@
   <link href="/css/home.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="/slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css"/>
-  
+
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 
 </head>
@@ -36,10 +36,10 @@
               </form>
             </div>
           </li>
-          <li class="nav-item"><a href="home">Home</a></li>
+          <li class="nav-item"><a href="/home">Home</a></li>
           <li class="nav-item"><a href="#">Categories</a></li>
           <li class="nav-item"><a href="#">Profile</a></li>
-          <li class="nav-item"><a href="settings">Settings</a></li>
+          <li class="nav-item"><a href="/settings">Settings</a></li>
           <li class="nav-item"><a href="/">Logout</a></li>
         </ul>
       </div>
@@ -50,6 +50,7 @@
   
 
   <div class="site-wrap">
+    <h3>Showing results for {{query}}</h3>
     <div class="row">
       {{#each results}}
       <a href={{link}}>

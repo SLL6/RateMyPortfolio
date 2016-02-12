@@ -50,6 +50,8 @@ app.get('/settings', settings.view);
 app.get('/search', search.displayResults);
 app.get('/rate/:id', rate.displayProject);
 
+app.post('/rate/:id', rate.updateRating);
+
 // Example route
 // app.get('/users', user.list);
 
