@@ -11,12 +11,13 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/bootstrap.css" rel="stylesheet">
   <link href="css/home.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 
 </head>
 <body>
-    <nav class="nav navbar-default">
+  <nav class="nav navbar-default">
+
     <div class="container-fluid">
       <div class="navbar-header">
         <!-- start of list -->
@@ -43,36 +44,62 @@
       </div>
     </div>
   </nav>
-<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+
+  <input type="checkbox" id="nav-trigger" class="nav-trigger" />
   <label for="nav-trigger"></label>
   
-
   <div class="site-wrap">
-    <div class="row">
-      {{#each results}}
-      <a href={{link}}>
-        <div class="panel panel-default">
-          <div class="panel-body">
-            <table>
-              <tr>
-                <td><img src={{imageURL}} style="padding-right: 15px"/></td>
-                <td colspan="2">
-                  <h4>{{title}}</h4>
-                  {{description}}
-                </td>
-              </tr>
-            </table>
-          </div>
-        </div>
-      </a>
-      {{/each}}
+
+   <div class=fixedbody>
+    <!-- First two rows for trending + images  --> 
+    <div class="">
+      <div class="row">
+        <h4>My Dank Website</h4>
+        <h6>By: Scott Klemmer</h6>
+          
+        <div class="embed-responsive embed-responsive-4by3" style="width:80vw; height:50vh;">
+        <iframe class="embed-responsive-item" src="http://www.bing.com"></iframe>
+</div>
+          
+          
+      </div>
+
+
+
+    <!-- Next two rows for FRESH + images  -->       
+    <div class="">
+      <div class="row">
+          </br>
+        <h4>Rate:</h4> 
+      </div>
+
     </div>
+
   </div>
 </div>
+
+
+</div>
+
+
+<!-- Main component for a primary marketing message or call to action -->
+
+
+
+
+
+
+
+
+
+
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script src="js/home.js"></script>
 
 
 </body>
