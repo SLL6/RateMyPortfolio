@@ -2,54 +2,54 @@
 	"trending": [
 	  {
 	    "title": "item 1",
-	    "imageUrl": "http://dummyimage.com/70x70/000/fff",
+	    "imageUrl": "http://www.topdesignmag.com/wp-content/uploads/2011/01/1.jpg",
 	    "link": "#"
 	  },
 	  {
 	    "title": "item 2",
-	    "imageUrl": "http://dummyimage.com/70x70/000/fff",
+	    "imageUrl": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/charlie-gentle.jpg",
 	    "link": "#"
 	  },
 	  {
 	    "title": "item 3",
-	    "imageUrl": "http://dummyimage.com/70x70/000/fff",
+	    "imageUrl": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/kevin-lucius.jpg",
 	    "link": "#"
 	  },
 	  {
 	    "title": "item 4",
-	    "imageUrl": "http://dummyimage.com/70x70/000/fff",
+	    "imageUrl": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/janis-godins.jpg",
 	    "link": "#"
 	  },
 	  {
 	    "title": "item 5",
-	    "imageUrl": "http://dummyimage.com/70x70/000/fff",
+	    "imageUrl": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/scratch-22.jpg",
 	    "link": "#"
 	  }
 	],
 	"fresh": [
 	  {
 	    "title": "item 1",
-	    "imageUrl": "http://dummyimage.com/70x70/000/fff",
+	    "imageUrl": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/teo-skaffa.jpg",
 	    "link": "#"
 	  },
 	  {
 	    "title": "item 2",
-	    "imageUrl": "http://dummyimage.com/70x70/000/fff",
+	    "imageUrl": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/edelwwweiss.jpg",
 	    "link": "#"
 	  },
 	  {
 	    "title": "item 3",
-	    "imageUrl": "http://dummyimage.com/70x70/000/fff",
+	    "imageUrl": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/serial-cut.jpg",
 	    "link": "#"
 	  },
 	  {
 	    "title": "item 4",
-	    "imageUrl": "http://dummyimage.com/70x70/000/fff",
+	    "imageUrl": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/soft-whiteroom.jpg",
 	    "link": "#"
 	  },
 	  {
 	    "title": "item 5",
-	    "imageUrl": "http://dummyimage.com/70x70/000/fff",
+	    "imageUrl": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/web-talents.jpg",
 	    "link": "#"
 	  }
 	]
