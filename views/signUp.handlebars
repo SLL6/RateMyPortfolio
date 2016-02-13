@@ -48,13 +48,17 @@
             <h1 class="hometext">RATED</h1>
             <p class="lead hometext">Feedback Revolutionized.</p>
 
+            {{#if error}}
+            <p class="alert alert-danger">{{error}}</p>
+            {{/if}}
+
             <p class="lead">
               <form id="login" method="post" action="/signUp">
                 <div class="form-group">
                   <input type="email" class="form-control" placeholder="@ucsd.edu email" name="email">
                   <input type="password" class="form-control" placeholder="Password" name="pwd">
                 </div>
-                <input type="submit" class="btn btn-primary btn-lg btn-block hometext" value="Login"></input>
+                <input type="submit" class="btn btn-primary btn-lg btn-block hometext" value="Sign Up!"></input>
               </form>
             </p>
           </div>
