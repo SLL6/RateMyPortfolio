@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <title>Rated</title>
+  <title>Rated</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-      
-      <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+  <!-- Bootstrap core CSS -->
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 
-    <!-- Custom styles for this template -->
-    <link href="/css/cover.css" rel="stylesheet">
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+
+  <!-- Custom styles for this template -->
+  <link href="/css/cover.css" rel="stylesheet">
 
   
-  </head>
+</head>
 
-  <body>
+<body>
 
-    <div class="site-wrapper">
+  <div class="site-wrapper">
 
-      <div class="site-wrapper-inner">
+    <div class="site-wrapper-inner">
 
-        <div class="cover-container">
+      <div class="cover-container">
 
      <!--     <div class="masthead clearfix">
             <div class="inner">
@@ -47,13 +47,18 @@
           <div class="inner cover">
             <h1 class="hometext">RATED</h1>
             <p class="lead hometext">Feedback Revolutionized.</p>
+
+            {{#if error}}
+            <p class="alert alert-danger">{{error}}</p>
+            {{/if}}
+
             <p class="lead">
-              <form id="login">
+              <form id="login" method="post" action="/login">
                 <div class="form-group">
-                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="@ucsd.edu email">
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                  <input type="email" class="form-control" placeholder="@ucsd.edu email" name="email">
+                  <input type="password" class="form-control" placeholder="Password" name="pwd">
                 </div>
-                  <a type="button" button type="submit" class="btn btn-primary btn-lg btn-block hometext" href="home">Login</button></a>
+                <input type="submit" class="btn btn-primary btn-lg btn-block hometext" value="Login"></input>
               </form>
             </p>
           </div>
@@ -75,4 +80,4 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug 
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
   </body>
-</html>
+  </html>

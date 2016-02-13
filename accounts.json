@@ -1,0 +1,13 @@
+{
+	"accounts": [
+	  {
+	  	"email": "user@example.com",
+	  	"password": "123abc"
+	  },
+	  {
+	  	"email": "yoda@dagobah.com",
+	  	"password": "thereIsNoTry"
+	  }
+	],
+	"error": ""
+}
