@@ -15,7 +15,7 @@ var home = require('./routes/home');
 var settings = require('./routes/settings');
 var search = require('./routes/search');
 var rate = require('./routes/rate');
-
+var categories = require('./routes/categories')
 // Example route
 // var user = require('./routes/user');
 
@@ -49,6 +49,7 @@ app.get('/home', home.view);
 app.get('/settings', settings.view);
 app.get('/search', search.displayResults);
 app.get('/rate/:id', rate.displayProject);
+app.get('/categories', categories.view);
 
 app.post('/login', login.checkCredentials);
 app.post('/signUp', signUp.createAccount);
