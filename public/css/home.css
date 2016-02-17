@@ -6,7 +6,7 @@
 
 #header{
   text-align: center;
-  padding-top: 1vh;
+  padding-top: 12px;
   font-weight: 600;
 
 }
@@ -72,7 +72,7 @@ fixedbody{
   z-index: 1;
   
   /* non-critical apperance styles */
-  padding: 5em;
+  padding: 4em;
   padding-top: 0em;
   background-image: radial-gradient(circle at bottom, gray, white);
   background-size: 100%;
