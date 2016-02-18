@@ -31,32 +31,9 @@
 </head>
 
 <body style="font-family:Roboto">
-  <!-- start of list -->
-  <ul class="navigation">
-    <li class="nav-item">
-      <!--search button -->
-      <div class="col-lg-10 sizingsearchbar">
-        <form id="searchform" role="form" method="get" action="/search">
-          <div class="input-group">
-            <input type="text" class="form-control" id="query" placeholder="Search for..." name="query">
-            <span class="input-group-btn">
-              <input type="submit" id="submitBtn" class="btn btn-default" value="Search"></input>
-            </span>
-          </div><!-- /input-group -->
-        </form>
-      </div>
-    </li>
-    <li class="nav-item"><a href="/home">Home</a></li>
-    <li class="nav-item"><a href="#">Categories</a></li>
-    <li class="nav-item"><a href="#">Profile</a></li>
-    <li class="nav-item"><a href="/settings">Settings</a></li>
-    <li class="nav-item"><a href="/">Logout</a></li>
-  </ul>
-
-  <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-  <label for="nav-trigger"></label>    
-
+  {{>menu}}
   <div class="container site-wrap">
+<<<<<<< HEAD
       
     <div class="row">
       <h5 style="font-weight:bold; margin-top:60px;">General</h5>
@@ -65,6 +42,11 @@
     <hr class="rulebreaks">
 
 
+=======
+     <div id="headerBar">
+    <h1 id="header">Settings</h1>
+  </div>
+>>>>>>> d68bb8b6b692d9b98fe0f77079d4d9a6c2aa6a4f
     <div class="checkbox">
       <label for="checkbox1">
         <h5 style="margin-left:-36px;">Notifications</h5>
@@ -97,9 +79,6 @@
     <div class="row">
       <h5>Invite Friends</h5>
     </div>
-
-
-
   </div>
 
     <!-- Bootstrap core JavaScript
