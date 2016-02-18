@@ -9,7 +9,7 @@
   margin-bottom:5px;
   margin-left:-15px;
   margin-right:-10px;
-  border-top-color: black;
+  border: 1px solid black;
 }
 
 #headerBar{
