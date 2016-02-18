@@ -53,12 +53,8 @@ app.get('/settings', settings.view);
 app.get('/search', search.displayResults);
 app.get('/rate/:id', rate.displayProject);
 app.get('/categories', categories.view);
-<<<<<<< HEAD
 app.get('/profile', profile.view);
-
-=======
 app.get('/help', help.view);
->>>>>>> 1aa010dc20cb9908c7f6d1fe9fdf6585b5368e99
 
 app.post('/login', login.checkCredentials);
 app.post('/signUp', signUp.createAccount);
