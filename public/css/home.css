@@ -6,11 +6,12 @@
 
 
 .rulebreaks{
-    margin-top:5px;
-    margin-bottom:5px;
-    margin-left:-15px;
-    margin-right:-10px;
-    border-top-color: black;
+  margin-top:5px;
+  margin-bottom:5px;
+  margin-left:-15px;
+  margin-right:-10px;
+  border-top-color: black;
+}
 
 #headerBar{
   width: auto;
@@ -31,7 +32,7 @@
 }
 
 fixedbody{
-    position:fixed;
+  position:fixed;
 }
 
 /* Navigation Menu - Background */
@@ -129,7 +130,7 @@ label[for="nav-trigger"] {
 }
 
 body {
-    /* Without this, the body has excess horizontal scroll when the menu is open */
+  /* Without this, the body has excess horizontal scroll when the menu is open */
   overflow-x: hidden;
 }
 
@@ -141,8 +142,8 @@ h1, h3, p {
 }
 
 code {
-    padding: 2px;
-    background: #ddd;
+  padding: 2px;
+  background: #ddd;
 }
 
 /* Micro reset */
@@ -151,8 +152,8 @@ html, body { height: 100%; width: 100%; font-family: Helvetica, Arial, sans-seri
 
 
 .sizingsearchbar {
-    margin-top: 12px;
-    margin-bottom: 12px;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 
@@ -179,7 +180,7 @@ html, body { height: 100%; width: 100%; font-family: Helvetica, Arial, sans-seri
 
 .rating > label { 
   color: #ddd; 
- float: right; 
+  float: right; 
 }
 
 /***** CSS Magic to Highlight Stars on Hover *****/
@@ -195,20 +196,20 @@ html, body { height: 100%; width: 100%; font-family: Helvetica, Arial, sans-seri
 
 
 .videocontainer {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 35px;
-    height: 0;
-    overflow: hidden;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 35px;
+  height: 0;
+  overflow: hidden;
 }
 
 
 .video-container iframe {
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /*
