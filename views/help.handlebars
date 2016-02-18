@@ -7,6 +7,9 @@
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <title>Rated</title>
 
+  <!-- Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
   <!-- Bootstrap -->
   <link href="/css/bootstrap.min.css" rel="stylesheet">
   <link href="/css/bootstrap.css" rel="stylesheet">
@@ -14,40 +17,25 @@
   <link rel="stylesheet" type="text/css" href="/slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css"/>
 
-  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-
 </head>
-<body style="font-family:Roboto">
+<body style="font-family: Roboto ; background-color: gray">
   {{>menu}}
-
   <div class="site-wrap">
-    <h1 id="header">Search</h1> 
-    <h3>Showing results for: {{query}}</h3>
-    <div class="row">
-      {{#each results}}
-      <a href={{link}}>
-        <div class="panel panel-default">
-          <div class="panel-body">
-            <table>
-              <tr>
-                <td><img class="thumbnail" src={{imageURL}} style="margin-right: 10px"/></td>
-                <td colspan="2">
-                  <h4>{{title}}</h4>
-                  {{description}}
-                </td>
-              </tr>
-            </table>
-          </div>
+    <div class=fixedbody>
+      <h1 id="header">Help</h1>
+      <div class="">
+        <div class="row">
+          <h4><b>FAQ<b/></h4> 
         </div>
-      </a>
-      {{/each}}
+      </div>
     </div>
   </div>
-</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/slick/slick.min.js"></script>
+<script src="/js/home.js"></script>
 
 
 </body>

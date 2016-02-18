@@ -31,31 +31,7 @@
 </head>
 
 <body style="font-family:Roboto">
-  <!-- start of list -->
-  <ul class="navigation">
-    <li class="nav-item">
-      <!--search button -->
-      <div class="col-lg-10 sizingsearchbar">
-        <form id="searchform" role="form" method="get" action="/search">
-          <div class="input-group">
-            <input type="text" class="form-control" id="query" placeholder="Search for..." name="query">
-            <span class="input-group-btn">
-              <input type="submit" id="submitBtn" class="btn btn-default" value="Search"></input>
-            </span>
-          </div><!-- /input-group -->
-        </form>
-      </div>
-    </li>
-    <li class="nav-item"><a href="/home">Home</a></li>
-    <li class="nav-item"><a href="#">Categories</a></li>
-    <li class="nav-item"><a href="#">Profile</a></li>
-    <li class="nav-item"><a href="/settings">Settings</a></li>
-    <li class="nav-item"><a href="/">Logout</a></li>
-  </ul>
-
-  <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-  <label for="nav-trigger"></label>    
-
+  {{>menu}}
   <div class="container site-wrap">
 
     <div class="checkbox">
@@ -76,9 +52,6 @@
     <div class="row">
       <h5>Password</h5>
     </div>
-
-
-
   </div>
 
     <!-- Bootstrap core JavaScript
