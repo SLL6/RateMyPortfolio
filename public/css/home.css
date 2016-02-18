@@ -4,9 +4,16 @@
 }
 @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 
+#headerBar{
+  width: auto;
+  margin-bottom: 12px;
+  border-bottom: 4px solid black;
+}
+
 #header{
   text-align: center;
-  padding-top: 12px;
+  padding-top: 0px;
+  margin-bottom: 3px;
   font-weight: 600;
 
 }

@@ -53,50 +53,9 @@
   
   <label for="nav-trigger"></label>
   <div class="site-wrap">
-   <div class=fixedbody>
-    <!-- First two rows for trending + images  --> 
-    <div id="headerBar">
-    <h1 id="header">Home</h1>
+     <div id="headerBar">
+    <h1 id="header">Profile</h1>
   </div>
-  
-    <div class="">
-      <div class="row">
-        <h4><b>Trending<b/></h4> 
-      </div>
-
-      <!-- First image  --> 
-      <div class="row">
-        <div class="carousel" id="carousel1">
-          {{#each trending}}
-          <div class="">
-            <a href="/rate/{{id}}">
-              <img class="thumbnail" src={{imageUrl}} alt="...">
-            </a>
-          </div>
-          {{/each}}
-        </div>
-      </div>
-    </div>
-
-    <!-- Next two rows for FRESH + images  -->       
-    <div class="">
-      <div class="row">
-        <h4><b>Fresh</b></h4> 
-      </div>
-
-      <!-- First image of second row  --> 
-      <div class="row">
-        <div class="carousel" id="carousel2">
-          {{#each fresh}}
-          <div class="">
-            <a href="/rate/{{id}}">
-              <img class="thumbnail" src={{imageUrl}} alt="...">
-            </a>
-          </div>
-          {{/each}}
-        </div>
-      </div>
-    </div>
 
   </div>
 </div>
