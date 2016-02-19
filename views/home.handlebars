@@ -8,7 +8,7 @@
   <title>Rated</title>
 
   <!-- Fonts -->
- <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 
   <!-- Bootstrap -->
   <link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -20,74 +20,60 @@
 </head>
 <body style="font-family: Roboto ; background-color: gray">
 
-  
-    {{>menu}}
+  {{>menu}}
   
   <div class="site-wrap">
-   <div class=fixedbody>
-    <!-- First two rows for trending + images  --> 
-    <div id="headerBar">
-    <h1 id="header">Home</h1>
-  </div>
-  
-    <div class="">
-      <div class="row">
-        <h4><b>Trending<b/></h4> 
+    <div class=fixedbody>
+      <!-- First two rows for trending + images  --> 
+      <div id="headerBar">
+        <h1 id="header">Home</h1>
       </div>
 
-      <!-- First image  --> 
-      <div class="row">
-        <div class="carousel" id="carousel1">
-          {{#each trending}}
-          <div class="">
-            <a href="/rate/{{id}}">
-              <img class="thumbnail" src={{imageUrl}} alt="...">
-            </a>
+      <div class="">
+        <div class="row">
+          <h4><b>Trending<b/></h4> 
+        </div>
+
+        <!-- First image  --> 
+        <div class="row">
+          <div class="carousel" id="carousel1">
+            {{#each trending}}
+            {{#with (lookup2 ../projects this)}}
+            <div class="">
+              <a href="/rate/{{id}}">
+                <img class="thumbnail" src={{imageUrl}} alt="...">
+              </a>
+            </div>
+            {{/with}}
+            {{/each}}
           </div>
-          {{/each}}
         </div>
       </div>
-    </div>
 
-    <!-- Next two rows for FRESH + images  -->       
-    <div class="">
-      <div class="row">
-        <h4><b>Fresh</b></h4> 
-      </div>
+      <!-- Next two rows for FRESH + images  -->       
+      <div class="">
+        <div class="row">
+          <h4><b>Fresh</b></h4> 
+        </div>
 
-      <!-- First image of second row  --> 
-      <div class="row">
-        <div class="carousel" id="carousel2">
-          {{#each fresh}}
-          <div class="">
-            <a href="/rate/{{id}}">
-              <img class="thumbnail" src={{imageUrl}} alt="...">
-            </a>
+        <!-- First image of second row  --> 
+        <div class="row">
+          <div class="carousel" id="carousel2">
+            {{#each fresh}}
+            {{#with (lookup2 ../projects this)}}
+            <div class="">
+              <a href="/rate/{{id}}">
+                <img class="thumbnail" src={{imageUrl}} alt="...">
+              </a>
+            </div>
+            {{/with}}
+            {{/each}}
           </div>
-          {{/each}}
         </div>
       </div>
+
     </div>
-
   </div>
-</div>
-
-
-</div>
-
-
-<!-- Main component for a primary marketing message or call to action -->
-
-
-
-
-
-
-
-
-
-
-
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->

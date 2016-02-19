@@ -1,7 +1,8 @@
 /*
  * GET home page.
  */
- var projects = require('../projects.json')
+ var data = require('../data.json');
+ var projects = data['projects'];
 
  exports.displayProject = function(req, res){
  	var id = req.params.id;
@@ -9,6 +10,7 @@
  };
 
  exports.updateRating = function(req, res) {
+ 	var id = req.params.id;
  	var rating1 = req.body.star1;
  	var rating2 = req.body.star2;
  	var rating3 = req.body.star3;
@@ -21,5 +23,7 @@
  	};
  	console.log(req.body);
  	console.log(rating);
- 	res.send(rating);
+ 	data['success']=true;
+ 	data['projects'][id-1]['ratings'].push(rating);
+ 	res.render('rate',projects[id-1]);
  }

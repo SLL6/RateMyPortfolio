@@ -1,9 +1,9 @@
 /*
  * GET home page.
  */
-var data = require('../searchResults.json');
+var data = require('../data.json');
 
 exports.displayResults = function(req, res){
 	data["query"] = req.query.query;
-  res.render('search',data);
+  res.render('search', data);
 };

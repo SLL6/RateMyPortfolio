@@ -1,0 +1,148 @@
+{
+	"accounts": [
+	  {
+	  	"email": "user@example.com",
+	  	"password": "123abc"
+	  },
+	  {
+	  	"email": "yoda@dagobah.com",
+	  	"password": "thereIsNoTry"
+	  }
+	],
+	"projects": [
+	  {
+	  	"id": 1,
+		  "title": "My Dank Website",
+		  "author": "Scott Klemmer",
+		  "projectURL": "http://www.basilmarket.com",
+		  "description": "Give me good reviews. Or else.",
+	    "imageUrl": "http://www.topdesignmag.com/wp-content/uploads/2011/01/1.jpg",
+	    "ratings": []
+	  },
+	  {
+	  	"id": 2,
+		  "title": "My Other Dank Website",
+		  "author": "Scott Klemmer",
+		  "projectURL": "http://www.basilmarket.com",
+		  "description": "Give me good reviews. Or else.",
+		  "imageUrl": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/charlie-gentle.jpg",
+	    "ratings": []
+	  },
+	  {
+	  	"id": 3,
+		  "title": "My Dank Website REMIX",
+		  "author": "Scott Klemmer",
+		  "projectURL": "http://www.basilmarket.com",
+		  "description": "Give me good reviews. Or else.",
+	    "imageUrl": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/kevin-lucius.jpg",
+	    "ratings": []
+	  },
+	  {
+	  	"id": 4,
+		  "title": "My Dank Website",
+		  "author": "Scott Klemmer",
+		  "projectURL": "http://www.basilmarket.com",
+		  "description": "Give me good reviews. Or else.",
+	    "imageUrl": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/janis-godins.jpg",
+	    "ratings": []
+	  },
+	  {
+	  	"id": 5,
+		  "title": "My Dank Website",
+		  "author": "Scott Klemmer",
+		  "projectURL": "http://www.basilmarket.com",
+		  "description": "Give me good reviews. Or else.",
+	    "imageUrl": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/scratch-22.jpg",
+	    "ratings": []
+	  },
+	  {
+	  	"id": 6,
+		  "title": "My Dank Website",
+		  "author": "Scott Klemmer",
+		  "projectURL": "http://www.basilmarket.com",
+		  "description": "Give me good reviews. Or else.",
+	    "imageUrl": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/teo-skaffa.jpg",
+	    "ratings": []
+	  },
+	  {
+	  	"id": 7,
+		  "title": "My Dank Website",
+		  "author": "Scott Klemmer",
+		  "projectURL": "http://www.basilmarket.com",
+		  "description": "Give me good reviews. Or else.",
+	    "imageUrl": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/edelwwweiss.jpg",
+	    "ratings": []
+	  },
+	  {
+	  	"id": 8,
+		  "title": "My Dank Website",
+		  "author": "Scott Klemmer",
+		  "projectURL": "http://www.basilmarket.com",
+		  "description": "Give me good reviews. Or else.",
+	    "imageUrl": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/serial-cut.jpg",
+	    "ratings": []
+	  },
+	  {
+	  	"id": 9,
+		  "title": "My Dank Website",
+		  "author": "Scott Klemmer",
+		  "projectURL": "http://www.basilmarket.com",
+		  "description": "Give me good reviews. Or else.",
+	    "imageUrl": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/soft-whiteroom.jpg",
+	    "ratings": []
+	  },
+	  {
+	  	"id": 10,
+		  "title": "My Dank Website",
+		  "author": "Scott Klemmer",
+		  "projectURL": "http://www.basilmarket.com",
+		  "description": "Give me good reviews. Or else.",
+	    "imageUrl": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/web-talents.jpg",
+	    "ratings": []
+	  },
+	  {
+	  	"id": 11,
+		  "title": "My Dank Website",
+		  "author": "Scott Klemmer",
+		  "projectURL": "http://www.basilmarket.com",
+		  "description": "Give me good reviews. Or else.",
+	    "imageUrl": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/scratch-22.jpg",
+	    "ratings": []
+	  }
+	],
+	"trending": [1, 2, 3, 4, 5],
+	"fresh": [6, 7, 8, 9, 10, 11],
+	"results": [
+	  {
+		  "title": "Pick me!",
+		  "imageURL": "http://www.topdesignmag.com/wp-content/uploads/2011/01/1.jpg",
+		  "description": "The one you are looking for",
+		  "link": "#"
+	  },
+	  {
+		  "title": "No me!",
+		  "imageURL": "http://dummyimage.com/70x70/000/fff",
+		  "description": "The one you are looking for",
+		  "link": "#"
+	  },
+	  {
+		  "title": "It's me!",
+		  "imageURL": "http://dummyimage.com/70x70/000/fff",
+		  "description": "The one you are looking for",
+		  "link": "#"
+	  },
+	  {
+		  "title": "Not",
+		  "imageURL": "http://dummyimage.com/70x70/000/fff",
+		  "description": "The one you are looking for",
+		  "link": "#"
+	  },
+	  {
+		  "title": "Pick me!",
+		  "imageURL": "http://dummyimage.com/70x70/000/fff",
+		  "description": "The one you are looking for",
+		  "link": "#"
+	  }
+	],
+  "query": ""
+}
