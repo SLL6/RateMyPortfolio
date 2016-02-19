@@ -16,7 +16,7 @@
 		  "author": "Scott Klemmer",
 		  "projectURL": "http://www.basilmarket.com",
 		  "description": "Give me good reviews. Or else.",
-	    "imageUrl": "http://www.topdesignmag.com/wp-content/uploads/2011/01/1.jpg",
+	    "imageURL": "http://www.topdesignmag.com/wp-content/uploads/2011/01/1.jpg",
 	    "ratings": []
 	  },
 	  {
@@ -24,8 +24,8 @@
 		  "title": "My Other Dank Website",
 		  "author": "Scott Klemmer",
 		  "projectURL": "http://www.basilmarket.com",
-		  "description": "Give me good reviews. Or else.",
-		  "imageUrl": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/charlie-gentle.jpg",
+		  "description": "Give me good reviews. Seriously.",
+		  "imageURL": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/charlie-gentle.jpg",
 	    "ratings": []
 	  },
 	  {
@@ -33,17 +33,17 @@
 		  "title": "My Dank Website REMIX",
 		  "author": "Scott Klemmer",
 		  "projectURL": "http://www.basilmarket.com",
-		  "description": "Give me good reviews. Or else.",
-	    "imageUrl": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/kevin-lucius.jpg",
+		  "description": "Give me good reviews. I mean it this time.",
+	    "imageURL": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/kevin-lucius.jpg",
 	    "ratings": []
 	  },
 	  {
 	  	"id": 4,
-		  "title": "My Dank Website",
+		  "title": "The Dankest of Them All",
 		  "author": "Scott Klemmer",
 		  "projectURL": "http://www.basilmarket.com",
-		  "description": "Give me good reviews. Or else.",
-	    "imageUrl": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/janis-godins.jpg",
+		  "description": "Even better than the last, trust me.",
+	    "imageURL": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/janis-godins.jpg",
 	    "ratings": []
 	  },
 	  {
@@ -51,8 +51,8 @@
 		  "title": "My Dank Website",
 		  "author": "Scott Klemmer",
 		  "projectURL": "http://www.basilmarket.com",
-		  "description": "Give me good reviews. Or else.",
-	    "imageUrl": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/scratch-22.jpg",
+		  "description": "I'm trying so hard. Pls",
+	    "imageURL": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/scratch-22.jpg",
 	    "ratings": []
 	  },
 	  {
@@ -61,7 +61,7 @@
 		  "author": "Scott Klemmer",
 		  "projectURL": "http://www.basilmarket.com",
 		  "description": "Give me good reviews. Or else.",
-	    "imageUrl": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/teo-skaffa.jpg",
+	    "imageURL": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/teo-skaffa.jpg",
 	    "ratings": []
 	  },
 	  {
@@ -70,7 +70,7 @@
 		  "author": "Scott Klemmer",
 		  "projectURL": "http://www.basilmarket.com",
 		  "description": "Give me good reviews. Or else.",
-	    "imageUrl": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/edelwwweiss.jpg",
+	    "imageURL": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/edelwwweiss.jpg",
 	    "ratings": []
 	  },
 	  {
@@ -79,7 +79,7 @@
 		  "author": "Scott Klemmer",
 		  "projectURL": "http://www.basilmarket.com",
 		  "description": "Give me good reviews. Or else.",
-	    "imageUrl": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/serial-cut.jpg",
+	    "imageURL": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/serial-cut.jpg",
 	    "ratings": []
 	  },
 	  {
@@ -88,7 +88,7 @@
 		  "author": "Scott Klemmer",
 		  "projectURL": "http://www.basilmarket.com",
 		  "description": "Give me good reviews. Or else.",
-	    "imageUrl": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/soft-whiteroom.jpg",
+	    "imageURL": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/soft-whiteroom.jpg",
 	    "ratings": []
 	  },
 	  {
@@ -97,7 +97,7 @@
 		  "author": "Scott Klemmer",
 		  "projectURL": "http://www.basilmarket.com",
 		  "description": "Give me good reviews. Or else.",
-	    "imageUrl": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/web-talents.jpg",
+	    "imageURL": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/web-talents.jpg",
 	    "ratings": []
 	  },
 	  {
@@ -106,43 +106,10 @@
 		  "author": "Scott Klemmer",
 		  "projectURL": "http://www.basilmarket.com",
 		  "description": "Give me good reviews. Or else.",
-	    "imageUrl": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/scratch-22.jpg",
+	    "imageURL": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/scratch-22.jpg",
 	    "ratings": []
 	  }
 	],
 	"trending": [1, 2, 3, 4, 5],
-	"fresh": [6, 7, 8, 9, 10, 11],
-	"results": [
-	  {
-		  "title": "Pick me!",
-		  "imageURL": "http://www.topdesignmag.com/wp-content/uploads/2011/01/1.jpg",
-		  "description": "The one you are looking for",
-		  "link": "#"
-	  },
-	  {
-		  "title": "No me!",
-		  "imageURL": "http://dummyimage.com/70x70/000/fff",
-		  "description": "The one you are looking for",
-		  "link": "#"
-	  },
-	  {
-		  "title": "It's me!",
-		  "imageURL": "http://dummyimage.com/70x70/000/fff",
-		  "description": "The one you are looking for",
-		  "link": "#"
-	  },
-	  {
-		  "title": "Not",
-		  "imageURL": "http://dummyimage.com/70x70/000/fff",
-		  "description": "The one you are looking for",
-		  "link": "#"
-	  },
-	  {
-		  "title": "Pick me!",
-		  "imageURL": "http://dummyimage.com/70x70/000/fff",
-		  "description": "The one you are looking for",
-		  "link": "#"
-	  }
-	],
-  "query": ""
+	"fresh": [6, 7, 8, 9, 10, 11]
 }

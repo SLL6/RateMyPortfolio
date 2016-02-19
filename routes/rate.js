@@ -23,7 +23,7 @@
  	};
  	console.log(req.body);
  	console.log(rating);
- 	data['success']=true;
  	data['projects'][id-1]['ratings'].push(rating);
+ 	data['projects'][id-1]['success'] = true;
  	res.render('rate',projects[id-1]);
  }
