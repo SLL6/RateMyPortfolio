@@ -1,7 +1,7 @@
 /*
  * GET sign up page.
  */
-var data = require('../accounts.json');
+var data = require('../data.json');
 var accounts = data['accounts'];
 
 exports.view = function(req, res){

@@ -11,8 +11,6 @@
   <link href="/css/bootstrap.min.css" rel="stylesheet">
   <link href="/css/bootstrap.css" rel="stylesheet">
   <link href="/css/home.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="/slick/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css"/>
 
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 
@@ -23,9 +21,9 @@
   <div class="site-wrap">
     <h1 id="header">Search</h1> 
     <h3>Showing results for: {{query}}</h3>
+    {{#each results}}
     <div class="row">
-      {{#each results}}
-      <a href={{link}}>
+      <a href="/rate/{{id}}">
         <div class="panel panel-default">
           <div class="panel-body">
             <table>
@@ -33,15 +31,30 @@
                 <td><img class="thumbnail" src={{imageURL}} style="margin-right: 10px"/></td>
                 <td colspan="2">
                   <h4>{{title}}</h4>
-                  {{description}}
+                  By: {{author}}
                 </td>
+              </tr>
+              <tr>
+                <td colspan="3">{{description}}</td>
               </tr>
             </table>
           </div>
         </div>
       </a>
-      {{/each}}
     </div>
+    {{else}}
+    <div class="row" style="margin-bottom: 5px">
+      Unfortunately, your search returned no results. Please try a different search.
+    </div>
+    <form id="searchform" role="form" method="get" action="/search">
+      <div class="input-group">
+        <input type="text" class="form-control" id="query" placeholder="Search for..." name="query">
+        <span class="input-group-btn">
+          <input type="submit" id="submitBtn" class="btn btn-default" value="Search"></input>
+        </span>
+      </div><!-- /input-group -->
+    </form>
+    {{/each}}
   </div>
 </div>
 
