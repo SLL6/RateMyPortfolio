@@ -27,34 +27,34 @@
 <body style="font-family:Roboto">
   {{>menu}}
   <div class="container site-wrap">
-      
-     <div id="headerBar">
-    <h1 id="header">Categories</h1>
-  </div>
-        
-    <div class="row">
-        <a href="">
-      <div class="col-xs-6 col-md-4 categories box effect1"><h4>Portfolios</h4>
-</div>
-        </a>
-            <a href="">
-      <div class="col-xs-6 col-md-4 categories box effect1"><h4>Artwork</h4>
-</div>
-        </a>
-        
-           <a href="">
-      <div class="col-xs-6 col-md-4 categories box effect1"><h4>Photography</h4>
-</div>
-        </a>
-               <a href="">
-      <div class="col-xs-6 col-md-4 categories box effect1"><h4>Random</h4>
-</div>
-        </a>
+    <div id="headerBar">
+      <h1 id="header">Submit</h1>
+    </div>
 
-</div>
+    <form style="font-weight: 600;" action="/home">
+      <h4 style="b:2px solid black"><b>Info</b></h4>
+      Title:<br>
+      <input class="fields" type="text" name="firstname"><br>
+      URL:<br>
+      <input class="fields" type="text" name="lastname"><br>
+      Info:<br>
+      <input class="fields" type="text" name="lastname">
 
-      
-      
+      <h4><b>Criterion</b></h4>
+      Criteria 1:<br>
+      <input class="fields" type="text" name="firstname"><br>
+      Criteria 2:<br>
+      <input class="fields" type="text" name="lastname"><br>
+      Criteria 3: <br>
+      <input class="fields" type="text" name="lastname">
+      Additional Criteria: (optional) <br>
+      <input class="fields" type="text" name="lastname">
+
+      <div  id="submitContainer"><input id="submit" type="submit" value="Submit"></div>
+
+
+    </form>
+        
         
   </div>
 
