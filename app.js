@@ -6,7 +6,7 @@
 var express = require('express');
 var http = require('http');
 var path = require('path');
-var handlebars = require('express3-handlebars')
+var handlebars = require('express3-handlebars');
 
 var index = require('./routes/index');
 var login = require('./routes/login');
@@ -17,7 +17,7 @@ var search = require('./routes/search');
 var rate = require('./routes/rate');
 var categories = require('./routes/categories');
 var profile = require('./routes/profile');
-var help = require('./routes/help')
+var help = require('./routes/help');
 
 // Example route
 // var user = require('./routes/user');
@@ -27,7 +27,9 @@ var app = express();
 // all environments
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
-app.engine('handlebars', handlebars());
+app.engine('handlebars', handlebars({
+    helpers: require("./public/js/helpers.js").helpers, // same file that gets used on our client
+}));
 app.set('view engine', 'handlebars');
 app.use(express.favicon());
 app.use(express.logger('dev'));
