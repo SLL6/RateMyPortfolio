@@ -39,6 +39,26 @@
 }
 @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 
+.box{
+    width:50%;
+	height:200px;
+	background:#FFF;
+}
+
+.effect1{
+     box-shadow: 0 10px 6px -6px #777;
+}
+
+.categories{
+    margin-top:30px;
+    height:100px;
+    text-align: center;
+    border: 1px solid;
+    display: flex;
+    justify-content:center;
+    flex-direction:column;
+}
+
 .rulebreaks{
   margin-top:5px;
   margin-bottom:5px;
