@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Rated</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+
+  <!-- Custom styles for this template -->
+  <link href="/css/home.css" rel="stylesheet">
+
+  
+</head>
+
+<body style="font-family:Roboto">
+  {{>menu}}
+  <div class="container site-wrap">
+    <div id="headerBar">
+      <h1 id="header">Submit</h1>
+    </div>
+
+    <form style="font-weight: 600;" action="/home">
+      <h4 style="b:2px solid black"><b>Info</b></h4>
+      Title:<br>
+      <input class="fields" type="text" name="firstname"><br>
+      URL:<br>
+      <input class="fields" type="text" name="lastname"><br>
+      Info:<br>
+      <input class="fields" type="text" name="lastname">
+
+      <h4><b>Criterion</b></h4>
+      Criteria 1:<br>
+      <input class="fields" type="text" name="firstname"><br>
+      Criteria 2:<br>
+      <input class="fields" type="text" name="lastname"><br>
+      Criteria 3: <br>
+      <input class="fields" type="text" name="lastname">
+      Additional Criteria: (optional) <br>
+      <input class="fields" type="text" name="lastname">
+
+      <div  id="submitContainer"><input id="submit" type="submit" value="Submit"></div>
+
+
+    </form>
+        
+        
+  </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>-->
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/home.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug 
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
+  </body>
+  </html>

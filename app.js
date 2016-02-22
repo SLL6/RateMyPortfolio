@@ -15,6 +15,7 @@ var home = require('./routes/home');
 var settings = require('./routes/settings');
 var search = require('./routes/search');
 var rate = require('./routes/rate');
+var submit = require('./routes/submit');
 var categories = require('./routes/categories');
 var profile = require('./routes/profile');
 var help = require('./routes/help');
@@ -55,6 +56,7 @@ app.get('/settings', settings.view);
 app.get('/search', search.displayResults);
 app.get('/rate/:id', rate.displayProject);
 app.get('/categories', categories.view);
+app.get('/submit',submit.view);
 app.get('/profile', profile.view);
 app.get('/help', help.view);
 

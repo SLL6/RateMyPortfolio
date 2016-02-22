@@ -1,3 +1,20 @@
+#submitContainer{
+  margin: 0 auto;
+  margin-top: 10vh;
+  text-align: center; 
+}
+
+#submit{
+  width: 150px;
+  height: 40px;
+  border-radius: 4px;
+}
+
+.fields{
+  width: 100%;
+  margin-bottom: 5px;
+}
+
 #bio{
   display: block;
   margin-top: 2vw;
@@ -39,7 +56,8 @@
 #header{
   text-align: center;
   padding-top: 0px;
-  margin-bottom: 3px;
+  margin-top: 2 px;
+  margin-bottom: 0px;
   font-weight: 600;
 
 }

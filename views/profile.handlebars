@@ -20,38 +20,7 @@
 </head>
 <body style="font-family: Roboto ; background-color: gray">
   
-  <nav class="nav navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <!-- start of list -->
-        <ul class="navigation">
-          <h1 style=" margin: 12px 0px 4px 36px; font-weight: 700; color: white">Rated.</h1>
-          <li class="nav-item">
-            <!--search button -->
-            <div class="col-lg-10 sizingsearchbar">
-              <form id="searchform" role="form" method="get" action="/search">
-                <div class="input-group">
-                  <input type="text" class="form-control" id="query" placeholder="Search for..." name="query">
-                  <span class="input-group-btn">
-                    <input type="submit" id="submitBtn" class="btn btn-default" value="Search"></input>
-                  </span>
-                </div><!-- /input-group -->
-              </form>
-            </div>
-          </li>
-          <li class="nav-item menuItem"><a href="home">Home</a></li>
-          <li class="nav-item menuItem"><a href="categories">Categories</a></li>
-          <li class="nav-item menuItem"><a href="profile">Profile</a></li>
-          <li class="nav-item menuItem"><a href="settings">Settings</a></li>
-          <li class="nav-item menuItem"><a href="/">Logout</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  
-  <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-  
-  <label for="nav-trigger"></label>
+  {{> menu}}
   <div class="site-wrap">
     <div id="headerBar">
       <h1 id="header">Profile</h1>
@@ -72,9 +41,26 @@
     </div>
 
     <div id="bio">
-      <div style= "border-bottom: 2px solid black; font-weight: 600">
+      <div style= "border-bottom: 2px solid black; font-weight: 600; margin-bottom: 10px">
         Work
       </div>
+
+      <div class="row">
+          <div class="carousel" id="carousel1">
+            {{#each trending}}
+            {{#with (lookup2 ../projects this)}}
+            <div class="">
+              <a href="/rate/{{id}}">
+                <img class="thumbnail" src={{imageURL}} alt="...">
+              </a>
+            </div>
+            {{/with}}
+            {{/each}}
+          </div>  
+        </div>
+
+
+
     </div>
   </div>
 </div>
