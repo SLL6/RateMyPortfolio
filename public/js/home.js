@@ -9,14 +9,9 @@ $(document).ready(function() {
  * Function that is called when the document is ready.
  */
  function initializePage() {
-  $('#myTabs a').click(function (e) {
-    e.preventDefault()
-    $(this).tab('show')
-  })
-
   $('.carousel').slick({
     infinite: true,
     slidesToShow: 3,
     swipeToScroll: true
   });
- }
+}

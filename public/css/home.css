@@ -211,45 +211,6 @@ html, body { height: 100%; width: 100%; font-family: Helvetica, Arial, sans-seri
   margin-bottom: 12px;
 }
 
-
-/****** Style Star Rating Widget *****/
-
-.rating { 
-  border: none;
-  float: left;
-}
-
-.rating > input { display: none; } 
-.rating > label:before { 
-  margin: 5px;
-  font-size: 1.25em;
-  font-family: FontAwesome;
-  display: inline-block;
-  content: "\f005";
-}
-
-.rating > .half:before { 
-  content: "\f089";
-  position: absolute;
-}
-
-.rating > label { 
-  color: #ddd; 
-  float: right; 
-}
-
-/***** CSS Magic to Highlight Stars on Hover *****/
-
-.rating > input:checked ~ label, /* show gold star when clicked */
-.rating:not(:checked) > label:hover, /* hover current star */
-.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
-
-.rating > input:checked + label:hover, /* hover current star when changing rating */
-.rating > input:checked ~ label:hover,
-.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
-.rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
-
-
 .videocontainer {
   position: relative;
   padding-bottom: 56.25%;
@@ -286,46 +247,60 @@ label.star {
 }
 
 /* Aesthetics (rating 1) stars */
-input.star-a:checked ~ label.star-a:before {
+input.star--0:checked ~ label.star--0:before {
   content: '\f005';
   color: #FD4;
   transition: all .25s;
 }
 
-input.star-5.star-a:checked ~ label.star-a:before {
+input.star-5.star--0:checked ~ label.star--0:before {
   color: #FE7;
   text-shadow: 0 0 20px #952;
 }
 
-input.star-1.star-a:checked ~ label.star-a:before { color: #F62; }
+input.star-1.star--0:checked ~ label.star--0:before { color: #F62; }
 
 /* Creativity (rating 2) stars */
-input.star-b:checked ~ label.star-b:before {
+input.star--1:checked ~ label.star--1:before {
   content: '\f005';
   color: #FD4;
   transition: all .25s;
 }
 
-input.star-5.star-b:checked ~ label.star-b:before {
+input.star-5.star--1:checked ~ label.star--1:before {
   color: #FE7;
   text-shadow: 0 0 20px #952;
 }
 
-input.star-1.star-b:checked ~ label.star-b:before { color: #F62; }
+input.star-1.star--1:checked ~ label.star--1:before { color: #F62; }
 
 /* Navigation (rating 3) stars */
-input.star-c:checked ~ label.star-c:before {
+input.star--2:checked ~ label.star--2:before {
   content: '\f005';
   color: #FD4;
   transition: all .25s;
 }
 
-input.star-5.star-c:checked ~ label.star-c:before {
+input.star-5.star--2:checked ~ label.star--2:before {
   color: #FE7;
   text-shadow: 0 0 20px #952;
 }
 
-input.star-1.star-c:checked ~ label.star-c:before { color: #F62; }
+input.star-1.star--2:checked ~ label.star--2:before { color: #F62; }
+
+/* ??? (rating 4) stars */
+input.star--3:checked ~ label.star--3:before {
+  content: '\f005';
+  color: #FD4;
+  transition: all .25s;
+}
+
+input.star-5.star--3:checked ~ label.star--3:before {
+  color: #FE7;
+  text-shadow: 0 0 20px #952;
+}
+
+input.star-1.star--3:checked ~ label.star--3:before { color: #F62; }
 
 label.star:hover { transform: rotate(-15deg) scale(1.3); }
 

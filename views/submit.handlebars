@@ -31,31 +31,31 @@
       <h1 id="header">Submit</h1>
     </div>
 
-    <form style="font-weight: 600;" action="/home">
+    <form style="font-weight: 600;" method= "post" action="/submit">
       <h4 style="b:2px solid black"><b>Info</b></h4>
       Title:<br>
-      <input class="fields" type="text" name="firstname"><br>
+      <input class="fields" type="text" name="title"><br>
+      Description:<br>
+      <input class="fields" type="text" name="description">
       URL:<br>
-      <input class="fields" type="text" name="lastname"><br>
-      Info:<br>
-      <input class="fields" type="text" name="lastname">
+      <input class="fields" type="text" name="projectURL"><br>
 
-      <h4><b>Criterion</b></h4>
-      Criteria 1:<br>
-      <input class="fields" type="text" name="firstname"><br>
-      Criteria 2:<br>
-      <input class="fields" type="text" name="lastname"><br>
-      Criteria 3: <br>
-      <input class="fields" type="text" name="lastname">
-      Additional Criteria: (optional) <br>
-      <input class="fields" type="text" name="lastname">
+      <h4><b>Criteria</b></h4>
+      Criterion 1:<br>
+      <input class="fields" type="text" name="criterion1"><br>
+      Criterion 2:<br>
+      <input class="fields" type="text" name="criterion2"><br>
+      Criterion 3: <br>
+      <input class="fields" type="text" name="criterion3">
+      Additional Criterion: (optional) <br>
+      <input class="fields" type="text" name="criterion4">
 
-      <div  id="submitContainer"><input id="submit" type="submit" value="Submit"></div>
+      <div id="submitContainer"><input id="submit" type="submit" value="Submit"></div>
 
 
     </form>
-        
-        
+
+
   </div>
 
     <!-- Bootstrap core JavaScript

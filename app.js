@@ -7,6 +7,7 @@ var express = require('express');
 var http = require('http');
 var path = require('path');
 var handlebars = require('express3-handlebars');
+var mongoose = require('mongoose');
 
 var index = require('./routes/index');
 var login = require('./routes/login');
@@ -15,6 +16,7 @@ var home = require('./routes/home');
 var settings = require('./routes/settings');
 var search = require('./routes/search');
 var rate = require('./routes/rate');
+var rate2 = require('./routes/rate2');
 var submit = require('./routes/submit');
 var categories = require('./routes/categories');
 var profile = require('./routes/profile');
@@ -22,6 +24,13 @@ var help = require('./routes/help');
 
 // Example route
 // var user = require('./routes/user');
+
+// Connect to the Mongo database, whether locally or on Heroku
+// MAKE SURE TO CHANGE THE NAME FROM 'lab7' TO ... IN OTHER PROJECTS
+var local_database_name = 'rated';
+var local_database_uri  = 'mongodb://localhost/' + local_database_name
+var database_uri = process.env.MONGOLAB_URI || local_database_uri
+mongoose.connect(database_uri);
 
 var app = express();
 
@@ -55,6 +64,7 @@ app.get('/home', home.view);
 app.get('/settings', settings.view);
 app.get('/search', search.displayResults);
 app.get('/rate/:id', rate.displayProject);
+app.get('/rate2/:id', rate2.displayProject);
 app.get('/categories', categories.view);
 app.get('/submit',submit.view);
 app.get('/profile', profile.view);
@@ -63,6 +73,8 @@ app.get('/help', help.view);
 app.post('/login', login.checkCredentials);
 app.post('/signUp', signUp.createAccount);
 app.post('/rate/:id', rate.updateRating);
+app.post('/rate2/:id', rate2.updateRating);
+app.post('/submit',submit.addNew);
 
 // Example route
 // app.get('/users', user.list);

@@ -49,61 +49,27 @@
 
         <form id="rating" role="form" method="post" action="">
           <div class="carousel">
-            <div id="rating1">
-              <h5>Aesthetics</h5>
+            {{#each criteria}}
+            <div id="rating{{@index}}">
+              <h5>{{this}}</h5>
               <div class="row stars">
-                <fieldset id="input-group1">
-                  <input class="star star-5 star-a" id="star-5a" type="radio" name="star1" value="5"/>
-                  <label class="star star-5 star-a" for="star-5a"></label>
-                  <input class="star star-4 star-a" id="star-4a" type="radio" name="star1" value="4"/>
-                  <label class="star star-4 star-a" for="star-4a"></label>
-                  <input class="star star-3 star-a" id="star-3a" type="radio" name="star1" value="3"/>
-                  <label class="star star-3 star-a" for="star-3a"></label>
-                  <input class="star star-2 star-a" id="star-2a" type="radio" name="star1" value="2"/>
-                  <label class="star star-2 star-a" for="star-2a"></label>
-                  <input class="star star-1 star-a" id="star-1a" type="radio" name="star1" value="1"/>
-                  <label class="star star-1 star-a" for="star-1a"></label>
+                <fieldset id="input-group">
+                  <input class="star star-5 star--{{@index}}" id="star-5{{@index}}" type="radio" name="star{{@index}}" value="5"/>
+                  <label class="star star-5 star--{{@index}}" for="star-5{{@index}}"></label>
+                  <input class="star star-4 star--{{@index}}" id="star-4{{@index}}" type="radio" name="star{{@index}}" value="4"/>
+                  <label class="star star-4 star--{{@index}}" for="star-4{{@index}}"></label>
+                  <input class="star star-3 star--{{@index}}" id="star-3{{@index}}" type="radio" name="star{{@index}}" value="3"/>
+                  <label class="star star-3 star--{{@index}}" for="star-3{{@index}}"></label>
+                  <input class="star star-2 star--{{@index}}" id="star-2{{@index}}" type="radio" name="star{{@index}}" value="2"/>
+                  <label class="star star-2 star--{{@index}}" for="star-2{{@index}}"></label>
+                  <input class="star star-1 star--{{@index}}" id="star-1{{@index}}" type="radio" name="star{{@index}}" value="1"/>
+                  <label class="star star-1 star--{{@index}}" for="star-1{{@index}}"></label>
                 </fieldset>
               </div>
             </div>
+            {{/each}}
 
-            <div id="rating2">
-              <h5>Creativity</h5>
-              <div class="row stars">
-                <fieldset id="input-group2">
-                  <input class="star star-5 star-b" id="star-5b" type="radio" name="star2" value="5"/>
-                  <label class="star star-5 star-b" for="star-5b"></label>
-                  <input class="star star-4 star-b" id="star-4b" type="radio" name="star2" value="4"/>
-                  <label class="star star-4 star-b" for="star-4b"></label>
-                  <input class="star star-3 star-b" id="star-3b" type="radio" name="star2" value="3"/>
-                  <label class="star star-3 star-b" for="star-3b"></label>
-                  <input class="star star-2 star-b" id="star-2b" type="radio" name="star2" value="2"/>
-                  <label class="star star-2 star-b" for="star-2b"></label>
-                  <input class="star star-1 star-b" id="star-1b" type="radio" name="star2" value="1"/>
-                  <label class="star star-1 star-b" for="star-1b"></label>
-                </fieldset>
-              </div>
-            </div>
-
-            <div id="rating3">
-              <h5>Navigation</h5>
-              <div class="row stars">
-                <fieldset id="input-group3">
-                  <input class="star star-5 star-c" id="star-5c" type="radio" name="star3" value="5"/>
-                  <label class="star star-5 star-c" for="star-5c"></label>
-                  <input class="star star-4 star-c" id="star-4c" type="radio" name="star3" value="4"/>
-                  <label class="star star-4 star-c" for="star-4c"></label>
-                  <input class="star star-3 star-c" id="star-3c" type="radio" name="star3" value="3"/>
-                  <label class="star star-3 star-c" for="star-3c"></label>
-                  <input class="star star-2 star-c" id="star-2c" type="radio" name="star3" value="2"/>
-                  <label class="star star-2 star-c" for="star-2c"></label>
-                  <input class="star star-1 star-c" id="star-1c" type="radio" name="star3" value="1"/>
-                  <label class="star star-1 star-c" for="star-1c"></label>
-                </fieldset>
-              </div>
-            </div>
-
-            <div id="rating4">
+            <div>
               <h5>Comment:</h5>
               <input type="text" class="form-control" name="comment">
               <input type="submit" class="btn btn-default" value="Submit"></input>
