@@ -2,7 +2,6 @@
  * GET home page.
  */
 var models = require('../models');
-var data = require('../data.json');
 
 exports.view = function(req, res){
 	models.Project
