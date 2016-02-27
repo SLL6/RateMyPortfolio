@@ -1,2 +1,13 @@
 Hello World.
 Yo
+
+How to Develop locally:
+Since we now have a databse, you have to initialize it using the files initDB.js and data.json. It doesn't work outside vagrant (I think) since you need MongoDB.
+
+ $ node initDB.js
+
+ You only need to do this once, unless you want to reset the databse to it's base state (what's in data.json).
+
+ Then you can run app.js as you usually do.
+
+ $ node app.js
