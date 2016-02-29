@@ -16,7 +16,6 @@ var home = require('./routes/home');
 var settings = require('./routes/settings');
 var search = require('./routes/search');
 var rate = require('./routes/rate');
-var rate2 = require('./routes/rate2');
 var submit = require('./routes/submit');
 var categories = require('./routes/categories');
 var profile = require('./routes/profile');
@@ -64,7 +63,7 @@ app.get('/home', home.view);
 app.get('/settings', settings.view);
 app.get('/search', search.displayResults);
 app.get('/rate/:id', rate.displayProject);
-app.get('/rate2/:id', rate2.displayProject);
+app.get('/rate2/:id', rate.displayProgress);
 app.get('/categories', categories.view);
 app.get('/submit',submit.view);
 app.get('/profile', profile.view);
@@ -73,7 +72,7 @@ app.get('/help', help.view);
 app.post('/login', login.checkCredentials);
 app.post('/signUp', signUp.createAccount);
 app.post('/rate/:id', rate.updateRating);
-app.post('/rate2/:id', rate2.updateRating);
+app.post('/rate2/:id', rate.updateRating);
 app.post('/submit',submit.addNew);
 
 // Example route
