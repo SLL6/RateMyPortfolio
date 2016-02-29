@@ -30,7 +30,7 @@
  		if (err) console.log(err);
  		progress = true;
  		res.render('rate', {
- 			"progress": true,
+ 			"progress": progress,
  			"project": projects[0]
  		});
  	}
