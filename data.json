@@ -2,11 +2,17 @@
 	"accounts": [
 	  {
 	  	"email": "user@example.com",
-	  	"password": "123abc"
+	  	"password": "123abc",
+	  	"name": "John Doe",
+	  	"projects": [],
+	  	"ratings": []
 	  },
 	  {
 	  	"email": "yoda@dagobah.com",
-	  	"password": "thereIsNoTry"
+	  	"password": "thereIsNoTry",
+	  	"name": "Yoda",
+	  	"projects": [],
+	  	"ratings": []
 	  }
 	],
 	"projects": [

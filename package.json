@@ -1,11 +1,11 @@
 {
-  "name": "IntroHCI",
+  "name": "Rated",
   "version": "0.0.1",
-  "author": "Intro HCI Staff",
+  "author": "SAM",
 
   "repository": {
     "type": "git",
-    "url": "https://github.com/IntroHCI/lab4"
+    "url": "https://github.com/SLL6/RateMyPortfolio"
   },
   "license": "MIT",
 

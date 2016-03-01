@@ -5,6 +5,11 @@ var models = require('../models');
 var data = require('../data.json');
 
 exports.displayResults = function(req, res){
+	if (req.session.user == undefined) {
+		res.redirect('login');
+		return;
+	}
+
 	var query = req.query.query;
 	var qRegex = new RegExp(query, 'i')
 

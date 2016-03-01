@@ -2,17 +2,8 @@ var register = function(Handlebars) {
 
 	var helpers = {
     // put all of your helpers inside this object
-    lookup2: function(collection, id) {
-    	var collectionLength = collection.length;
-
-    	for (var i = 0; i < collectionLength; i++) {
-    		if (collection[i].id === id) {
-    			return collection[i];
-    		}
-
-    	}
-
-    	return null;
+    matchValue: function(collection, idx) {
+    	return collection[idx];
     }
   };
 

@@ -1,6 +1,17 @@
 var Mongoose = require('mongoose');
 
+var UserSchema = new Mongoose.Schema({
+	"email": String,
+	"password": String,
+	"name": String,
+  "projects": [{type: Mongoose.Schema.Types.ObjectId, ref: 'Project'}],
+  "ratings": [{type: Mongoose.Schema.Types.ObjectId, ref: 'Rating'}]
+})
+
+exports.User = Mongoose.model('User', UserSchema);
+
 var RatingSchema = new Mongoose.Schema({
+	"project": {type: Mongoose.Schema.Types.ObjectId, ref: 'Project'},
 	"values": [Number],
 	"comment": String
 });
@@ -14,7 +25,7 @@ var ProjectSchema = new Mongoose.Schema({
   "projectURL": String,
   "imageURL": String,
   "criteria": [String],
-  "ratings": [RatingSchema]
+  "ratings": [{type: Mongoose.Schema.Types.ObjectId, ref: 'Rating'}]
 });
 
 exports.Project = Mongoose.model('Project', ProjectSchema);
