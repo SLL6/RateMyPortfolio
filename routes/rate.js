@@ -11,6 +11,17 @@
  	}
 
  	var id = req.params.id;
+ 	if (req.session.progress) {
+ 		res.redirect('rate2/' + id);
+ 		return;
+ 	}
+ 	
+ 	var success = false;
+ 	if (req.session.success == true)
+ 		success = true;
+
+ 	req.session.success = false;
+
  	models.Project
  	.find({"_id": id})
  	.exec(display);
@@ -20,6 +31,7 @@
 
  		progress = false;
  		res.render('rate', {
+ 			"success": success,
  			"progress": progress,
  			"project": projects[0]
  		});
@@ -33,6 +45,17 @@
  	}
 
  	var id = req.params.id;
+ 	if (!req.session.progress) {
+ 		res.redirect('rate/' + id);
+ 		return;
+ 	}
+
+ 	var success = false;
+ 	if (req.session.success == true)
+ 		success = true;
+
+ 	req.session.success = false;
+
  	models.Project
  	.find({"_id": id})
  	.populate('ratings')
@@ -42,6 +65,7 @@
  		if (err) console.log(err);
  		progress = true;
  		res.render('rate', {
+ 			"success": success,
  			"progress": progress,
  			"project": projects[0]
  		});
@@ -66,7 +90,7 @@
  	.find({ _id: id }).
  	exec(function(err, proj) {
  		var rating = new models.Rating({
- 			"project": proj[0],
+ 			"project": proj[0]._id,
  			"values": [rating1, rating2, rating3],
  			"comment": comment[1]
  		});
@@ -95,6 +119,7 @@
  			});
 
  		console.log("rated");
+ 		req.session.success = true;
  		var url = progress ? "rate2/" : "rate/";
  		res.redirect(url + id);
  	});

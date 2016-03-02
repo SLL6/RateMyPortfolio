@@ -9,12 +9,16 @@
 		return;
 	}
 
- 	console.log(req.session.user);
+ 	//console.log(req.session.user);
  	models.User
- 	  .find({"_id": req.session.user._id})
- 	  .populate('projects ratings')
+ 	  .findOne({"_id": req.session.user})
+ 	  .populate({
+ 	  	path: 'projects ratings',
+ 	  	populate: {path: 'project', model: 'Project'}
+ 	  })
  	  .exec(function (err, user) {
  		  if (err) console.log(err);
- 		  res.render('profile',user[0]);
+ 		  console.log(user);
+ 		  res.render('profile',user);
  	  });
  };
