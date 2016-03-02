@@ -59,7 +59,7 @@
           {{#each projects}}
           <div class="">
             <a href="/rate/{{_id}}">
-              <img class="thumbnail" src={{imageURL}} alt="...">
+              <img class="thumbnail" src={{imageURL}}>
             </a>
           </div>
           {{/each}}
@@ -78,28 +78,25 @@
         <div class="row">
           <div class="carousel" id="carousel2">
             {{#each ratings}}
-            <div class="row">
-              <a href="/rate/{{project._id}}">
-                <div class="panel panel-default">
-                  <div class="panel-body">
-                    <table>
-                      <tr>
-                        <td><img class="thumbnail" src={{project.imageURL}} style="margin-right: 10px"/></td>
-                        <td colspan="2">
-                          <h4>{{project.title}}</h4>
-                          By: {{project.author}}
-                        </td>
-                      </tr>
-                      {{#each project.criteria}}
-                      <tr>
-                        <td colspan="2">{{this}}</td>
-                        <td>{{matchRating ../../values @index}}</td>
-                      </tr>
-                      {{/each}}
-                    </table>
-                  </div>
-                </div>
-              </a>
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <table>
+                  <tr>
+                    <td><img class="thumbnail" src={{project.imageURL}} style="margin-right: 10px"/></td>
+                    <td>
+                      <h4>{{project.title}}</h4>
+                      By: {{project.author}}
+                    </td>
+                  </tr>
+                  {{#each project.criteria}}
+                  <tr>
+                    <td>{{this}}</td>
+                    <td>{{matchValue ../values @index}}</td>
+                  </tr>
+                  {{/each}}
+                </table>
+              </div>
+                <div class="panel-footer"><a href="/rate/{{project._id}}" type="button" class="btn btn-primary btn-block">Edit?</a></div>
             </div>
             {{/each}}
           </div>  

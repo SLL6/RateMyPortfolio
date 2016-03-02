@@ -26,7 +26,7 @@
  				res.redirect('signUp', {"error": "Something went wrong, please try again."});
  				return;
  			}
- 			req.session.user = newUser;
+ 			req.session.user = newUser._id;
  			res.redirect('home');
  		})
  	})
