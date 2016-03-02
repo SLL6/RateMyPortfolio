@@ -1,3 +1,8 @@
+@font-face{
+  font-family: stamp;
+  src: url("../fonts/Depressionist_3_Revisited_2010.ttf");
+}
+
 .hometext{
   font-family: 'Montserrat', sans-serif;
 }

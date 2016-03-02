@@ -1,3 +1,14 @@
+@font-face{
+  font-family: stamp;
+  src: url("../fonts/Depressionist_3_Revisited_2010.ttf");
+}
+
+
+.row{
+  padding-left: 12vw;
+  padding-right: 12vw;
+
+}
 #submitContainer{
   margin: 0 auto;
   margin-top: 10vh;
@@ -34,8 +45,8 @@
 
 }
 .thumbnail{
-  width: 25vw;
-  height: 25vw;
+  width: 30vw;
+  height: 30vw;
 }
 @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 
@@ -68,22 +79,29 @@
 }
 
 #headerBar{
+  background-color: #707070;
   width: auto;
-  margin-bottom: 12px;
-  border-bottom: 4px solid black;
+  padding-top: 5px;
+  margin-bottom: 14px;
+  height: 60px;
+  border: 1px solid grey;
+  border-radius: 4px
 }
 
 #header{
+  font-family: 'Rancho';
   text-align: center;
   padding-top: 0px;
   margin-top: 2 px;
   margin-bottom: 0px;
-  font-weight: 600;
-
+  font-weight: 500;
+  color:white;
+  font-size: 42px;
 }
 .menuItem{
   font-weight: 500;
   font-size: 14px;
+  font-family: Roboto;
 }
 
 fixedbody{
@@ -104,22 +122,22 @@ fixedbody{
   
   /* non-critical appearance styles */
   list-style: none;
-  background: #111;
+  background: #454545;
 }
 
 /* Navigation Menu - List items */
 .nav-item {
   /* non-critical appearance styles */
-  width: 200px;
-  border-top: 1px solid #111;
-  border-bottom: 1px solid #000;
+  width: 150px;
+  border-top: 0px solid #353535;
+  border-bottom: 1px solid #353535;
 }
 
 .nav-item a {
   /* non-critical appearance styles */
   display: block;
   padding: 1em;
-  background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+  /*background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);*/
   color: white;
   font-size: 1.2em;
   text-decoration: none;
@@ -127,7 +145,7 @@ fixedbody{
 }
 
 .nav-item a:hover {
-  background: #63686C;
+  background: #63684B;
 }
 
 /* Site Wrapper - Everything that isn't navigation */
@@ -135,7 +153,7 @@ fixedbody{
   /* Critical position and size styles */
   min-height: 100%;
   min-width: 100%;
-  background-color: white; /* Needs a background or else the nav will show through */
+  background-color: rgb(256,212,210); /* Needs a background or else the nav will show through */
   position: relative;
   top: 0;
   bottom: 100%;
@@ -143,9 +161,9 @@ fixedbody{
   z-index: 1;
   
   /* non-critical apperance styles */
-  padding: 4em;
+  padding: 0em;
   padding-top: 0em;
-  background-image: radial-gradient(circle at bottom, gray, white);
+  background-image: radial-gradient(circle at bottom, rgb(189,183,172), white);
   background-size: 100%;
 }
 
@@ -176,11 +194,11 @@ label[for="nav-trigger"] {
 }
 
 .nav-trigger:checked + label {
-  left: 215px;
+  left: 155px;
 }
 
 .nav-trigger:checked ~ .site-wrap {
-  left: 200px;
+  left: 140px;
   box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
 }
 
