@@ -1,3 +1,18 @@
+#OOTD{
+font-family: stamp;
+color: red;
+margin-right: 2vw;
+margin-left: 2vw;
+font-size: 32px;
+}
+
+#title{
+  padding: 0px ;
+  padding-left: 5vw;
+  font-family: 'Rancho';
+  font-size: 36px;
+  font-weight: 400;
+}
 @font-face{
   font-family: stamp;
   src: url("../fonts/Depressionist_3_Revisited_2010.ttf");
@@ -5,10 +20,18 @@
 
 
 .row{
-  padding-left: 12vw;
-  padding-right: 12vw;
-
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 96vw;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  border: 1px solid rgb(200,200,200);
+  background-color: rgb(240,240,240);
+  border-radius: 2px;
 }
+
 #submitContainer{
   margin: 0 auto;
   margin-top: 10vh;
@@ -45,8 +68,9 @@
 
 }
 .thumbnail{
-  width: 30vw;
-  height: 30vw;
+  width: 27vw;
+  height: 27vw;
+  margin-bottom: 0;
 }
 @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 
@@ -85,7 +109,7 @@
   margin-bottom: 14px;
   height: 60px;
   border: 1px solid grey;
-  border-radius: 4px
+  border-radius: 4px;
 }
 
 #header{
@@ -153,7 +177,7 @@ fixedbody{
   /* Critical position and size styles */
   min-height: 100%;
   min-width: 100%;
-  background-color: rgb(256,212,210); /* Needs a background or else the nav will show through */
+  background-color: rgb(225,225,225); /* Needs a background or else the nav will show through */
   position: relative;
   top: 0;
   bottom: 100%;
@@ -163,7 +187,7 @@ fixedbody{
   /* non-critical apperance styles */
   padding: 0em;
   padding-top: 0em;
-  background-image: radial-gradient(circle at bottom, rgb(189,183,172), white);
+  /*background-image: radial-gradient(circle at bottom, rgb(189,183,172), white);*/
   background-size: 100%;
 }
 
@@ -181,11 +205,13 @@ label[for="nav-trigger"] {
   z-index: 2;
   
   /* non-critical apperance styles */
-  height: 30px;
-  width: 30px;
+  height: 32px;
+  width: 32px;
   cursor: pointer;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");
+  /*background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");*/
+  background-image: url("http://bldg5records.com/public/img/mobile-menu.png"); 
   background-size: contain;
+  background-repeat: no-repeat;
 }
 
 /* Make the Magic Happen */
