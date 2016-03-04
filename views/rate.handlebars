@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!--{{>rateExperiment}}-->
+  
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,12 +18,18 @@
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Rancho' rel='stylesheet' type='text/css'>
 
 </head>
 <body style="font-family:Roboto">
+
   {{>menu}}
   
   <div class="site-wrap">
+      <div id="headerBar">
+        <h1 id="header">Rate</h1>
+      </div>
       <div class="row">
         <h3>{{project.title}}</h3>
         <h5>By: {{project.author}}</h5>
@@ -52,8 +58,8 @@
           <div class="carousel2">
             {{#each project.criteria}}
             <div id="rating{{@index}}">
-              <h5>{{this}}</h5>
-              <div class="row stars">
+              <h3>{{this}}</h3>
+              <div class="stars">
                 <fieldset id="input-group">
                   <input class="star star-5 star--{{@index}}" id="star-5{{@index}}" type="radio" name="star{{@index}}" value="5"/>
                   <label class="star star-5 star--{{@index}}" for="star-5{{@index}}"></label>
@@ -88,8 +94,8 @@
           <div class="carousel1">
             {{#each project.criteria}}
             <div id="rating{{@index}}">
-              <h5>{{this}}</h5>
-              <div class="row stars">
+              <h3 style="margin-bottom:0; margin-top: 12px; font-family: rancho; font-weight: 600; font-size: 32px">{{this}}</h3>
+              <div class="stars">
                 <fieldset id="input-group">
                   <input class="star star-5 star--{{@index}}" id="star-5{{@index}}" type="radio" name="star{{@index}}" value="5"/>
                   <label class="star star-5 star--{{@index}}" for="star-5{{@index}}"></label>
