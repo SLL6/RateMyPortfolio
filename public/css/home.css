@@ -1,23 +1,47 @@
 #OOTD{
 font-family: stamp;
-color: red;
+color: rgb(200,0,0);
 margin-right: 2vw;
 margin-left: 2vw;
-font-size: 32px;
+font-size: 24px;
 }
 
-#title{
+#rowTitle{
   padding: 0px ;
-  padding-left: 5vw;
+  padding-left: 0vw;
   font-family: 'Rancho';
-  font-size: 36px;
-  font-weight: 400;
+  font-size: 24px;
+  font-weight: 600;
 }
 @font-face{
   font-family: stamp;
   src: url("../fonts/Depressionist_3_Revisited_2010.ttf");
 }
+@font-face{
+  font-family: Rancho;
+  src: url("https://fonts.gstatic.com/s/rancho/v6/S-YcqhLwgYWxIA-a7eDp2g.woff2");
+}
 
+@font-face{
+  font-family: PTSans;
+  src: url("https://fonts.gstatic.com/s/ptsans/v8/0XxGQsSc1g4rdRdjJKZrNPk_vArhqVIZ0nv9q090hN8.woff2");
+}
+
+
+.rowHeader{
+  text-align: center;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 96vw;
+  margin-top: 2vh;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  border: 1px solid rgb(200,200,200);
+  background-color: rgb(255,255,255);
+  border-radius: 2px;
+  border-bottom: 0px solid black;
+  color: #454545;
+}
 
 .row{
   padding-top: 5px;
@@ -28,7 +52,7 @@ font-size: 32px;
   margin-left: 2vw;
   margin-right: 2vw;
   border: 1px solid rgb(200,200,200);
-  background-color: rgb(240,240,240);
+  background-color: rgb(255,255,255);
   border-radius: 2px;
 }
 
@@ -103,10 +127,11 @@ font-size: 32px;
 }
 
 #headerBar{
-  background-color: #707070;
+  /*background-color: #454545;*/
+  background: radial-gradient(#555555 0%, #505050 20%, #454545 50%);
   width: auto;
   padding-top: 5px;
-  margin-bottom: 14px;
+  margin-bottom: 1vh;
   height: 60px;
   border: 1px solid grey;
   border-radius: 4px;
@@ -125,7 +150,7 @@ font-size: 32px;
 .menuItem{
   font-weight: 500;
   font-size: 14px;
-  font-family: Roboto;
+  font-family: 'PTSans';
 }
 
 fixedbody{
@@ -163,7 +188,9 @@ fixedbody{
   padding: 1em;
   /*background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);*/
   color: white;
-  font-size: 1.2em;
+  font-family: PTSans;
+  font-weight: bold;
+  font-size: 18px;
   text-decoration: none;
   transition: color 0.2s, background 0.5s;
 }
