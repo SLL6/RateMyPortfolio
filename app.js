@@ -19,7 +19,7 @@ var rate = require('./routes/rate');
 var submit = require('./routes/submit');
 var categories = require('./routes/categories');
 var profile = require('./routes/profile');
-var help = require('./routes/help');
+var review = require('./routes/review');
 
 // Example route
 // var user = require('./routes/user');
@@ -67,13 +67,15 @@ app.get('/rate2/:id', rate.displayProgress);
 app.get('/categories', categories.view);
 app.get('/submit',submit.view);
 app.get('/profile', profile.view);
-app.get('/help', help.view);
+app.get('/review/:id', review.view);
 
 app.post('/login', login.checkCredentials);
 app.post('/signUp', signUp.createAccount);
 app.post('/rate/:id', rate.updateRating);
 app.post('/rate2/:id', rate.updateRating);
 app.post('/submit',submit.addNew);
+app.post('/settings/name',settings.updateName);
+app.post('/settings/pwd',settings.changePwd);
 
 // Example route
 // app.get('/users', user.list);

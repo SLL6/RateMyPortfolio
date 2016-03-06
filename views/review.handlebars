@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Rated</title>
+
+  <!-- Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+  <!-- Bootstrap -->
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/bootstrap.css" rel="stylesheet">
+  <link href="/css/home.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css"/>
+
+</head>
+<body style="font-family: Roboto ; background-color: gray">
+  {{>menu}}
+  <div class="site-wrap">
+    <div class=fixedbody>
+      <div id="headerBar">
+        <h1 id="header">Review</h1>
+      </div>
+      {{#if project}}
+      <h3>{{project.title}}</h3>
+      <div class="row">
+        <h4><b>Ratings<b/></h4> 
+          {{#each project.ratings}}
+          <div class="panel panel-default">
+            <table class="table">
+              {{#each project.criteria}}
+              <tr>
+                <td>{{this}}</td>
+                <td>{{matchValue ../values @index}}</td>
+              </tr>
+              {{/each}}
+              <tr>
+                {{#if comment}}
+                <td colspan="2" style="text-align: center">{{comment}}</td>
+                {{else}}
+                <td colspan="2" style="text-align: center">No comments</td>
+                {{/if}}
+              </tr>
+            </table>
+          </div>
+          {{/each}}
+      </div>
+      {{else}}
+      You do not have permission to view this page.
+      {{/if}}
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/slick/slick.min.js"></script>
+  <script src="/js/home.js"></script>
+
+
+</body>
+</html>

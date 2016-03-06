@@ -91,16 +91,16 @@ function updateProgress(index) {
 function logRating(variation) {
 	var type = variation == 1 ? 'rating1' : 'rating2';
 	ga('send','event',type,'submit');
-	if ($('.star--0').value == undefined) {
+	if (rating0 == 0) {
 		ga('send','event',type,'no1');
 	}
-	if ($('.star--1').value == undefined) {
+	if (rating1 == 0) {
 		ga('send','event',type,'no2');
 	}
-	if ($('.star--2').value == undefined) {
+	if (rating2 == 0) {
 		ga('send','event',type,'no3');
 	}
-	if ($('.star--3').value == undefined) {
+	if (rating3 == 0) {
 		ga('send','event',type,'no4');
 	}
 }
