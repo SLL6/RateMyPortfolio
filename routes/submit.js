@@ -28,7 +28,7 @@
  			"description": req.body.description,
  			"projectURL": req.body.projectURL,
  			"imageURL": "http://lorempixel.com/500/500/people/",
- 			"criteria": [req.body.criterion1, req.body.criterion2, req.body.criterion3, req.body.criterion4],
+ 			"criteria": [req.body.criterion1, req.body.criterion2, req.body.criterion3],
  			"ratings": []
  		});
 

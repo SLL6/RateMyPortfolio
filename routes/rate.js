@@ -81,9 +81,11 @@
  	var id = req.params.id;
 
  	var rating1 = req.body.star0;
+ 	rating1 = rating1 == undefined ? 0 : rating1;
  	var rating2 = req.body.star1;
+ 	rating2 = rating2 == undefined ? 0 : rating2;
  	var rating3 = req.body.star2;
- 	var rating4 = req.body.star3;
+ 	rating3 = rating3 == undefined ? 0 : rating3;
 
  	var comment = req.body.comment;
  	models.Project

@@ -26,23 +26,17 @@
       <h1 id="header">Profile</h1>
     </div>
     
-    <img id="profilePic" src="http://media.hotbirthdays.com/upload/2015/07/26/ryan-reynolds.jpg" >
-    <div id="info">
-      <h3 style="margin-bottom: 4px">
-        <strong>
-          {{#if name}}
-          {{name}}
-          {{else}}
-          No Name
-          {{/if}}
-        </strong>
-      </h3>
-      <h3 style="margin-bottom: 4px; font-size: 16px"> 40  </h3>
-      <h3 style="margin-bottom: 4px; font-size: 16px"> LA </h3>
-      <h3 style="margin-bottom: 0px; font-size: 16px"> Actor </h3>
+    <a href="/settings" style="float: right">Edit?</a>
+    <h3 style="text-align: center">
+      <strong>
+        {{#if name}}
+        {{name}}
+        {{else}}
+        No Name
+        {{/if}}
+      </strong>
+    </h3>
 
-    </div>
-    
     <!--<div id="bio">
       <div style="border-bottom: 2px solid black; font-weight: 600"> Bio </div>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cill
@@ -58,7 +52,7 @@
         <div class="carousel" id="carousel1">
           {{#each projects}}
           <div class="">
-            <a href="/rate/{{_id}}">
+            <a href="/review/{{_id}}">
               <img class="thumbnail" src={{imageURL}}>
             </a>
           </div>
@@ -96,7 +90,7 @@
                   {{/each}}
                 </table>
               </div>
-                <div class="panel-footer"><a href="/rate/{{project._id}}" type="button" class="btn btn-primary btn-block">Edit?</a></div>
+              <div class="panel-footer"><a href="/rate/{{project._id}}" type="button" class="btn btn-primary btn-block">Review Again?</a></div>
             </div>
             {{/each}}
           </div>  
