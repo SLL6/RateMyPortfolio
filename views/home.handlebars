@@ -11,6 +11,8 @@
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Rancho' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans:700' rel='stylesheet' type='text/css'>
 
   <!-- Bootstrap -->
   <link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -31,8 +33,10 @@
         <h1 id="header">Home</h1>
       </div>
 
-      <div id="OOTD">
-        <b>Rate of the Day!</b>
+      <div class="rowHeader" style="margin-top: 0px">
+        <div id="OOTD">
+          <b>Rate of the Day!</b>
+        </div>
       </div>
 
       <div style="padding-left: 23vw" class="row">
@@ -40,29 +44,33 @@
 
       </div>
 
-      <div class="">
-        <div id="title">
-            <b>Trending<b/>
-        </div>
-
-        <!-- First image  --> 
-        <div class="row">
-          <div class="carousel" id="carousel1">
-            {{#each trending}}
-            <div class="">
-              <a href="/rate/{{_id}}">
-                <img class="thumbnail" src={{imageURL}} alt="...">
-              </a>
-            </div>
-            {{/each}}
-          </div>
+      
+      <div class="rowHeader">
+        <div id="rowTitle">
+          Trending
         </div>
       </div>
 
+      <!-- First image  --> 
+      <div class="row">
+        <div class="carousel" id="carousel1">
+          {{#each trending}}
+          <div class="">
+            <a href="/rate/{{_id}}">
+              <img class="thumbnail" src={{imageURL}} alt="...">
+            </a>
+          </div>
+          {{/each}}
+        </div>
+      </div>
+      
+
       <!-- Next two rows for FRESH + images  -->       
       <div class="">
-        <div id="title">
-          <b>Fresh</b> 
+        <div class="rowHeader">
+          <div id="rowTitle">
+             Fresh 
+          </div>
         </div>
 
         <!-- First image of second row  --> 
