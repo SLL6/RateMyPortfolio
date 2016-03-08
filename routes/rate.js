@@ -9,12 +9,6 @@
  		res.redirect('login');
  		return;
  	}
-
- 	var id = req.params.id;
- 	if (req.session.progress) {
- 		res.redirect('rate2/' + id);
- 		return;
- 	}
  	
  	var success = false;
  	if (req.session.success == true)
@@ -23,7 +17,7 @@
  	req.session.success = false;
 
  	models.Project
- 	.find({"_id": id})
+ 	.find({"_id": req.params.id})
  	.exec(display);
 
  	function display(err, projects) {
@@ -32,41 +26,6 @@
  		progress = false;
  		res.render('rate', {
  			"success": success,
- 			"progress": progress,
- 			"project": projects[0]
- 		});
- 	}
- };
-
- exports.displayProgress = function(req, res){
- 	if (req.session.user == undefined) {
- 		res.redirect('login');
- 		return;
- 	}
-
- 	var id = req.params.id;
- 	if (!req.session.progress) {
- 		res.redirect('rate/' + id);
- 		return;
- 	}
-
- 	var success = false;
- 	if (req.session.success == true)
- 		success = true;
-
- 	req.session.success = false;
-
- 	models.Project
- 	.find({"_id": id})
- 	.populate('ratings')
- 	.exec(display);
-
- 	function display(err, projects) {
- 		if (err) console.log(err);
- 		progress = true;
- 		res.render('rate', {
- 			"success": success,
- 			"progress": progress,
  			"project": projects[0]
  		});
  	}
@@ -122,7 +81,6 @@
 
  		console.log("rated");
  		req.session.success = true;
- 		var url = progress ? "rate2/" : "rate/";
- 		res.redirect(url + id);
+ 		res.redirect("/rate/" + id);
  	});
  }

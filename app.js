@@ -63,7 +63,6 @@ app.get('/home', home.view);
 app.get('/settings', settings.view);
 app.get('/search', search.displayResults);
 app.get('/rate/:id', rate.displayProject);
-app.get('/rate2/:id', rate.displayProgress);
 app.get('/categories', categories.view);
 app.get('/submit',submit.view);
 app.get('/profile', profile.view);

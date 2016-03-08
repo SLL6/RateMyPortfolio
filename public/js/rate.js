@@ -15,14 +15,7 @@ $(document).ready(function() {
  * Function that is called when the document is ready.
  */
  function initializePage() {
- 	$('.carousel1').slick({
- 		infinite: true,
- 		slidesToShow: 1,
- 		swipeToScroll: true,
- 		dots: true
- 	});
-
- 	$('.carousel2').slick({
+ 	$('.carousel').slick({
  		infinite: false,
  		slidesToShow: 1,
  		swipeToScroll: true,
@@ -39,14 +32,6 @@ $(document).ready(function() {
   });
   $('.star--3').change(function() {
   	updateProgress(3);
-  });
-
-  $('#subRate1').click(function () {
-  	logRating(1);
-  });
-
-  $('#subRate2').click(function () {
-  	logRating(2);
   });
 }
 
@@ -86,21 +71,4 @@ function updateProgress(index) {
 	$(".progress-bar").attr('style', "width: " + progress + "%");
 	$(".progress-bar").attr('aria-valuenow', progress);
 	$(".progress-bar").text(progress+"%");
-}
-
-function logRating(variation) {
-	var type = variation == 1 ? 'rating1' : 'rating2';
-	ga('send','event',type,'submit');
-	if (rating0 == 0) {
-		ga('send','event',type,'no1');
-	}
-	if (rating1 == 0) {
-		ga('send','event',type,'no2');
-	}
-	if (rating2 == 0) {
-		ga('send','event',type,'no3');
-	}
-	if (rating3 == 0) {
-		ga('send','event',type,'no4');
-	}
 }
