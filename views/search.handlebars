@@ -19,29 +19,29 @@
   {{>menu}}
 
   <div class="site-wrap">
-    <h1 id="header">Search</h1> 
+    <div id="headerBar">
+      <h1 id="header">Search</h1> 
+    </div>
     <h3>Showing results for: {{query}}</h3>
     {{#each results}}
-    <div class="row">
-      <a href="/rate/{{_id}}">
-        <div class="panel panel-default">
-          <div class="panel-body">
-            <table>
-              <tr>
-                <td><img class="thumbnail" src={{imageURL}} style="margin-right: 10px"/></td>
-                <td colspan="2">
-                  <h4>{{title}}</h4>
-                  By: {{author}}
-                </td>
-              </tr>
-              <tr>
-                <td colspan="3">{{description}}</td>
-              </tr>
-            </table>
-          </div>
+    <a href="/rate/{{_id}}">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <table>
+            <tr>
+              <td><img class="thumbnail" src="http://api.page2images.com/directlink?p2i_url={{projectURL}}&p2i_key=f65e33ca12284154&p2i_device=2" style="margin-right: 10px"/></td>
+              <td colspan="2">
+                <h4>{{title}}</h4>
+                By: {{author}}
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3">{{description}}</td>
+            </tr>
+          </table>
         </div>
-      </a>
-    </div>
+      </div>
+    </a>
     {{else}}
     <div class="row" style="margin-bottom: 5px">
       Unfortunately, your search returned no results. Please try a different search.

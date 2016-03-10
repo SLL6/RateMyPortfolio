@@ -40,8 +40,11 @@
       </div>
 
       <div style="padding-left: 23vw" class="row">
-        <img style="height: 50vw; width: 50vw" class="thumbnail" src="https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/edelwwweiss.jpg">
-
+        {{#with ootd}}
+        <a href="/rate/{{_id}}">
+          <img style="height: 50vw; width: 50vw" class="thumbnail" src="http://api.page2images.com/directlink?p2i_url={{projectURL}}&p2i_key=f65e33ca12284154&p2i_device=2">
+        </a>
+        {{/with}}
       </div>
 
       
@@ -57,7 +60,7 @@
           {{#each trending}}
           <div class="">
             <a href="/rate/{{_id}}">
-              <img class="thumbnail" src={{imageURL}} alt="...">
+              <img class="thumbnail" src="http://api.page2images.com/directlink?p2i_url={{projectURL}}&p2i_key=f65e33ca12284154&p2i_device=2">
             </a>
           </div>
           {{/each}}
@@ -69,26 +72,26 @@
       <div class="">
         <div class="rowHeader">
           <div id="rowTitle">
-             Fresh 
-          </div>
-        </div>
+           Fresh 
+         </div>
+       </div>
 
-        <!-- First image of second row  --> 
-        <div class="row">
-          <div class="carousel" id="carousel2">
-            {{#each fresh}}
-            <div class="">
-              <a href="/rate/{{_id}}">
-                <img class="thumbnail" src={{imageURL}} alt="...">
-              </a>
-            </div>
-            {{/each}}
+       <!-- First image of second row  --> 
+       <div class="row">
+        <div class="carousel" id="carousel2">
+          {{#each fresh}}
+          <div class="">
+            <a href="/rate/{{_id}}">
+              <img class="thumbnail" src="http://api.page2images.com/directlink?p2i_url={{projectURL}}&p2i_key=f65e33ca12284154&p2i_device=2">
+            </a>
           </div>
+          {{/each}}
         </div>
       </div>
-
     </div>
+
   </div>
+</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->

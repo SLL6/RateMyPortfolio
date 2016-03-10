@@ -21,97 +21,86 @@
 		  "author": "Scott Klemmer",
 		  "projectURL": "http://www.basilmarket.com",
 		  "description": "Give me good reviews. Or else.",
-	    "imageURL": "http://www.topdesignmag.com/wp-content/uploads/2011/01/1.jpg",
 	    "criteria": ["Aesthetics", "Creativity", "Navigation"],
 	    "ratings": []
 	  },
 	  {
-		  "title": "My Other Dank Website",
-		  "author": "Scott Klemmer",
-		  "projectURL": "http://www.basilmarket.com",
-		  "description": "Give me good reviews. Seriously.",
-		  "imageURL": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/charlie-gentle.jpg",
+		  "title": "Buffalo",
+		  "author": "Buffalo",
+		  "projectURL": "http://builtbybuffalo.com/",
+		  "description": "Founded in 2006, Buffalo is a small web design & development agency based in Brighton, UK. Over the last few years we've made a reputation for building websites that look great and are easy-to-use.",
 	    "criteria": ["Aesthetics", "Creativity", "Navigation"],
 	    "ratings": []
 	  },
 	  {
-		  "title": "My Dank Website REMIX",
-		  "author": "Scott Klemmer",
-		  "projectURL": "http://www.basilmarket.com",
+		  "title": "Apparatus",
+		  "author": "Someone at Apparatus",
+		  "projectURL": "http://apparatusstudio.com/",
 		  "description": "Give me good reviews. I mean it this time.",
-	    "imageURL": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/kevin-lucius.jpg",
+	    "criteria": ["Design", "Content", "Navigation"],
+	    "ratings": []
+	  },
+	  {
+		  "title": "Mike Kus's Portfolio",
+		  "author": "Mike Kus",
+		  "projectURL": "http://mikekus.com/",
+		  "description": "Mike is a UK based designer specialising in Web/UI Design, Graphic Design, Branding, Illustration & Photography. He has a worldwide client roster and his work is regulary featured in design related publications. Mike is also a regular speaker at design/tech conferences.",
+	    "criteria": ["Aesthetics", "Creativity", "Content"],
+	    "ratings": []
+	  },
+	  {
+		  "title": "My Portfolio",
+		  "author": "Melanie DaVeid",
+		  "projectURL": "http://melaniedaveid.com/",
+		  "description": "I am a UX Designer and Art Director from Austria living in Berlin.",
 	    "criteria": ["Aesthetics", "Creativity", "Navigation"],
 	    "ratings": []
 	  },
 	  {
-		  "title": "The Dankest of Them All",
-		  "author": "Scott Klemmer",
-		  "projectURL": "http://www.basilmarket.com",
-		  "description": "Even better than the last, trust me.",
-	    "imageURL": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/janis-godins.jpg",
+		  "title": "Sean Halpin's Portfolio",
+		  "author": "Sean Halpin",
+		  "projectURL": "http://seanhalpin.io/",
+		  "description": "I'm a web designer / developer based in Toronto, Canada. I have a passion for web design and love to create for web and mobile devices.",
 	    "criteria": ["Aesthetics", "Creativity", "Navigation"],
 	    "ratings": []
 	  },
 	  {
-		  "title": "My Dank Website",
-		  "author": "Scott Klemmer",
-		  "projectURL": "http://www.basilmarket.com",
-		  "description": "I'm trying so hard. Pls",
-	    "imageURL": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/scratch-22.jpg",
+		  "title": "Portfolio",
+		  "author": "Sam Dallyn",
+		  "projectURL": "http://www.samdallyn.co.uk/",
+		  "description": "Crafting experiences and seeking to make the complex clear & beautiful.",
+	    "criteria": ["Color Scheme", "Creativity", "Content"],
+	    "ratings": []
+	  },
+	  {
+		  "title": "A.H.A. Desgin",
+		  "author": "Andy Hau",
+		  "projectURL": "http://www.andyhau.com/",
+		  "description": "We’re a London based design company founded by Andy Hau that specialises in architecture, graphic design and product design. We believe that creativity has no boundaries and a creative vision transcends the media it is created in.",
 	    "criteria": ["Aesthetics", "Creativity", "Navigation"],
 	    "ratings": []
 	  },
 	  {
-		  "title": "My Dank Website",
-		  "author": "Scott Klemmer",
-		  "projectURL": "http://www.basilmarket.com",
-		  "description": "Give me good reviews. Or else.",
-	    "imageURL": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/teo-skaffa.jpg",
+		  "title": "The Beast Is Back",
+		  "author": "Christopher Lee",
+		  "projectURL": "http://www.thebeastisback.com/",
+		  "description": "Chris doesn't just share his name with legendary actor, Christopher Lee but apparently a creative talent too. His design site, The Beast is Back, showcases his punchy designs and illustrations influenced by 90's cartoons and urban street culture.",
 	    "criteria": ["Aesthetics", "Creativity", "Navigation"],
 	    "ratings": []
 	  },
 	  {
-		  "title": "My Dank Website",
-		  "author": "Scott Klemmer",
-		  "projectURL": "http://www.basilmarket.com",
-		  "description": "Give me good reviews. Or else.",
-	    "imageURL": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/edelwwweiss.jpg",
+		  "title": "My Portfolio",
+		  "author": "Ryan Scherf",
+		  "projectURL": "http://ryanscherf.net/",
+		  "description": "Ryan Scherf: Product Designer & Maker",
 	    "criteria": ["Aesthetics", "Creativity", "Navigation"],
 	    "ratings": []
 	  },
 	  {
-		  "title": "My Dank Website",
-		  "author": "Scott Klemmer",
-		  "projectURL": "http://www.basilmarket.com",
-		  "description": "Give me good reviews. Or else.",
-	    "imageURL": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/serial-cut.jpg",
-	    "criteria": ["Aesthetics", "Creativity", "Navigation"],
-	    "ratings": []
-	  },
-	  {
-		  "title": "My Dank Website",
-		  "author": "Scott Klemmer",
-		  "projectURL": "http://www.basilmarket.com",
-		  "description": "Give me good reviews. Or else.",
-	    "imageURL": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/soft-whiteroom.jpg",
-	    "criteria": ["Aesthetics", "Creativity", "Navigation"],
-	    "ratings": []
-	  },
-	  {
-		  "title": "My Dank Website",
-		  "author": "Scott Klemmer",
-		  "projectURL": "http://www.basilmarket.com",
-		  "description": "Give me good reviews. Or else.",
-	    "imageURL": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/web-talents.jpg",
-	    "criteria": ["Aesthetics", "Creativity", "Navigation"],
-	    "ratings": []
-	  },
-	  {
-		  "title": "My Dank Website",
-		  "author": "Scott Klemmer",
-		  "projectURL": "http://www.basilmarket.com",
-		  "description": "Give me good reviews. Or else.",
-	    "imageURL": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/scratch-22.jpg",
+		  "title": "Charlotte Tang's Portfolio",
+		  "author": "Charlotte Tang",
+		  "projectURL": "http://charlottetang.com/",
+		  "description": "Toronto-based designer who strives to marry the love of web and graphic design by finding a harmonious balance between functionality and aesthetics.",
 	    "criteria": ["Aesthetics", "Creativity", "Navigation"],
 	    "ratings": []
 	  }

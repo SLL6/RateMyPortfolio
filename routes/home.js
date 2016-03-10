@@ -15,9 +15,14 @@ exports.view = function(req, res){
 
 	function display(err, projects) {
 		if (err) console.log(err);
+
+		var ootd = Math.floor(Math.random() * projects.length); 
+		console.log(ootd);
+
 		var trending = projects.slice(0,6);
 		var fresh = projects.slice(6);
 	  res.render('home', {
+	  	"ootd": projects[ootd],
 	  	"trending": trending,
 	  	"fresh": fresh
 	  });

@@ -4,6 +4,13 @@ var register = function(Handlebars) {
     // put all of your helpers inside this object
     matchValue: function(collection, idx) {
     	return collection[idx];
+    },
+
+    getByIdx: function(collection, idx) {
+      if (idx < collection.length)
+        return collection[idx];
+
+      return null;
     }
   };
 
@@ -21,10 +28,10 @@ var register = function(Handlebars) {
 
 // client
 if (typeof window !== "undefined") {
-    register(Handlebars);
+  register(Handlebars);
 }
 // server
 else {
-    module.exports.register = register;
-    module.exports.helpers = register(null);
+  module.exports.register = register;
+  module.exports.helpers = register(null);
 }
