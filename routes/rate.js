@@ -53,7 +53,7 @@
  		var rating = new models.Rating({
  			"project": proj[0]._id,
  			"values": [rating1, rating2, rating3],
- 			"comment": comment[1]
+ 			"comment": comment
  		});
 
  		rating.save(function (err){
@@ -72,7 +72,7 @@
 
  		models.User
  		.update(
- 			{ _id: req.session.user._id },
+ 			{ _id: req.session.user },
  			{ $push: { ratings: rating } }
  			).exec(function (err, result) {
  				if (err) console.log(err);

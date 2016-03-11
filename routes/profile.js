@@ -12,8 +12,9 @@
  	//console.log(req.session.user);
  	models.User
  	  .findOne({"_id": req.session.user})
+ 	  .populate('projects')
  	  .populate({
- 	  	path: 'projects ratings',
+ 	  	path: 'ratings',
  	  	populate: {path: 'project', model: 'Project'}
  	  })
  	  .exec(function (err, user) {
