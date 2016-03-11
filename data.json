@@ -21,6 +21,7 @@
 		  "author": "Scott Klemmer",
 		  "projectURL": "http://www.basilmarket.com",
 		  "description": "Give me good reviews. Or else.",
+		  "imageURL": "http://www.topdesignmag.com/wp-content/uploads/2011/01/1.jpg",
 	    "criteria": ["Aesthetics", "Creativity", "Navigation"],
 	    "ratings": []
 	  },
@@ -29,6 +30,7 @@
 		  "author": "Buffalo",
 		  "projectURL": "http://builtbybuffalo.com/",
 		  "description": "Founded in 2006, Buffalo is a small web design & development agency based in Brighton, UK. Over the last few years we've made a reputation for building websites that look great and are easy-to-use.",
+		  "imageURL": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/charlie-gentle.jpg",
 	    "criteria": ["Aesthetics", "Creativity", "Navigation"],
 	    "ratings": []
 	  },
@@ -36,7 +38,8 @@
 		  "title": "Apparatus",
 		  "author": "Someone at Apparatus",
 		  "projectURL": "http://apparatusstudio.com/",
-		  "description": "Give me good reviews. I mean it this time.",
+		  "description": "Please give me good reviews. I tried so hard.",
+		  "imageURL": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/kevin-lucius.jpg",
 	    "criteria": ["Design", "Content", "Navigation"],
 	    "ratings": []
 	  },
@@ -45,6 +48,7 @@
 		  "author": "Mike Kus",
 		  "projectURL": "http://mikekus.com/",
 		  "description": "Mike is a UK based designer specialising in Web/UI Design, Graphic Design, Branding, Illustration & Photography. He has a worldwide client roster and his work is regulary featured in design related publications. Mike is also a regular speaker at design/tech conferences.",
+		  "imageURL": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/janis-godins.jpg",
 	    "criteria": ["Aesthetics", "Creativity", "Content"],
 	    "ratings": []
 	  },
@@ -53,6 +57,7 @@
 		  "author": "Melanie DaVeid",
 		  "projectURL": "http://melaniedaveid.com/",
 		  "description": "I am a UX Designer and Art Director from Austria living in Berlin.",
+		  "imageURL": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/scratch-22.jpg",
 	    "criteria": ["Aesthetics", "Creativity", "Navigation"],
 	    "ratings": []
 	  },
@@ -61,7 +66,8 @@
 		  "author": "Sean Halpin",
 		  "projectURL": "http://seanhalpin.io/",
 		  "description": "I'm a web designer / developer based in Toronto, Canada. I have a passion for web design and love to create for web and mobile devices.",
-	    "criteria": ["Aesthetics", "Creativity", "Navigation"],
+		 	"imageURL": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/teo-skaffa.jpg",
+	    "criteria": ["Adorableness", "Creativity", "Navigation"],
 	    "ratings": []
 	  },
 	  {
@@ -69,6 +75,7 @@
 		  "author": "Sam Dallyn",
 		  "projectURL": "http://www.samdallyn.co.uk/",
 		  "description": "Crafting experiences and seeking to make the complex clear & beautiful.",
+		 	"imageURL": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/edelwwweiss.jpg",
 	    "criteria": ["Color Scheme", "Creativity", "Content"],
 	    "ratings": []
 	  },
@@ -77,6 +84,7 @@
 		  "author": "Andy Hau",
 		  "projectURL": "http://www.andyhau.com/",
 		  "description": "We’re a London based design company founded by Andy Hau that specialises in architecture, graphic design and product design. We believe that creativity has no boundaries and a creative vision transcends the media it is created in.",
+		  "imageURL": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/serial-cut.jpg",
 	    "criteria": ["Aesthetics", "Creativity", "Navigation"],
 	    "ratings": []
 	  },
@@ -85,6 +93,7 @@
 		  "author": "Christopher Lee",
 		  "projectURL": "http://www.thebeastisback.com/",
 		  "description": "Chris doesn't just share his name with legendary actor, Christopher Lee but apparently a creative talent too. His design site, The Beast is Back, showcases his punchy designs and illustrations influenced by 90's cartoons and urban street culture.",
+		 	"imageURL": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/soft-whiteroom.jpg",
 	    "criteria": ["Aesthetics", "Creativity", "Navigation"],
 	    "ratings": []
 	  },
@@ -93,6 +102,7 @@
 		  "author": "Ryan Scherf",
 		  "projectURL": "http://ryanscherf.net/",
 		  "description": "Ryan Scherf: Product Designer & Maker",
+		 	"imageURL": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/web-talents.jpg",
 	    "criteria": ["Aesthetics", "Creativity", "Navigation"],
 	    "ratings": []
 	  },
@@ -101,6 +111,7 @@
 		  "author": "Charlotte Tang",
 		  "projectURL": "http://charlottetang.com/",
 		  "description": "Toronto-based designer who strives to marry the love of web and graphic design by finding a harmonious balance between functionality and aesthetics.",
+		 	"imageURL": "https://media-mediatemple.netdna-ssl.com/wp-content/uploads/images/fresh-portfolios/scratch-22.jpg",
 	    "criteria": ["Aesthetics", "Creativity", "Navigation"],
 	    "ratings": []
 	  }

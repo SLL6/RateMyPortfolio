@@ -23,6 +23,7 @@ var ProjectSchema = new Mongoose.Schema({
   "author": String,
   "description": String,
   "projectURL": String,
+  "imageURL": String,
   "criteria": [String],
   "ratings": [{type: Mongoose.Schema.Types.ObjectId, ref: 'Rating'}]
 });

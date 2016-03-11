@@ -42,7 +42,7 @@
       <div style="padding-left: 23vw" class="row">
         {{#with ootd}}
         <a href="/rate/{{_id}}">
-          <img style="height: 50vw; width: 50vw" class="thumbnail" src="http://api.page2images.com/directlink?p2i_url={{projectURL}}&p2i_key=f65e33ca12284154&p2i_device=2">
+          <img style="height: 50vw; width: 50vw" class="thumbnail" src={{imageURL}}>
         </a>
         {{/with}}
       </div>
@@ -60,7 +60,7 @@
           {{#each trending}}
           <div class="">
             <a href="/rate/{{_id}}">
-              <img class="thumbnail" src="http://api.page2images.com/directlink?p2i_url={{projectURL}}&p2i_key=f65e33ca12284154&p2i_device=2">
+              <img class="thumbnail" src={{imageURL}}>
             </a>
           </div>
           {{/each}}
@@ -82,7 +82,7 @@
           {{#each fresh}}
           <div class="">
             <a href="/rate/{{_id}}">
-              <img class="thumbnail" src="http://api.page2images.com/directlink?p2i_url={{projectURL}}&p2i_key=f65e33ca12284154&p2i_device=2">
+              <img class="thumbnail" src={{imageURL}}>
             </a>
           </div>
           {{/each}}
